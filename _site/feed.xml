@@ -1,99 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-28T21:07:00+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/test-copy.html" rel="alternate" type="text/html" title="Welcome!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/test%20copy</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/test-copy.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-28T21:54:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CYL’s Homepage</title><subtitle>求真求确    必邃必专</subtitle><entry><title type="html">Construction of mouse and rat model of T1D</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Construction of mouse and rat model of T1D" /><published>2022-08-28T21:50:13+08:00</published><updated>2022-08-28T21:50:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html"><![CDATA[<p>Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<p>For the rat model of T1D, male rats (Sprague–Dawley) were fasted for 16 h and received intraperitoneal injection of streptozotocin (40 mg kg^–1^ ) for 5 d. Two weeks after injection, fasted rats with hyperglycemia over 16.6 mmol liter^–1^ glucose were considered diabetic and used for further experiments.</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<blockquote>
+  <p>Zhou, Yang, et al. “A small and highly sensitive red/far-red optogenetic switch for applications in mammals.” <em>Nature Biotechnology</em> (2021): 1-11.</p>
+</blockquote>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h5 id="小鼠t1d造模">小鼠T1D造模</h5>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ol>
+  <li>10 W雄鼠，饥饿16 h后，注射50 mg kg<sup>-1</sup> STZ（溶于0.1 M 柠檬酸buffer，pH = 4），连续注射5天。</li>
+  <li>注射结束2周后，测量空腹血糖值，超过16.6 M血糖浓度则认为造模成功。</li>
+</ol>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h5 id="大鼠t1d造模">大鼠T1D造模</h5>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Test!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/test.html" rel="alternate" type="text/html" title="Test!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/test</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/test.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>基本方法与小鼠造模类似，大鼠为SD大鼠。STZ剂量为40 mg kg^-1^</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h5 id="赵星钧的方法">赵星钧的方法：</h5>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<p><strong>Furman BL. Streptozotocin-Induced Diabetic
+Models in Mice and Rats. Curr Protoc Pharmacol. 2015 Sep 1;70:5.47.1-5.47.20.
+doi: 10.1002/0471141755.ph0547s70. PMID: 26331889.</strong></p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<h6 id="材料">材料</h6>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<ul>
+  <li>
+    <p>C57BL/6雄性小鼠大约 25g, 8至12周龄;每个治疗组推荐12至20只动物</p>
+  </li>
+  <li>
+    <p>标准鼠粮</p>
+  </li>
+  <li>
+    <p>50 mM柠檬酸钠缓冲液，pH 4.5:使用前立即准备</p>
+  </li>
+  <li>
+    <p>蔗糖</p>
+  </li>
+  <li>
+    <p>链脲霉素(STZ;10% (w/v)):在使用前准备</p>
+  </li>
+  <li>
+    <p>ep管</p>
+  </li>
+  <li>
+    <p>铝箔</p>
+  </li>
+  <li>
+    <p>注射器</p>
+  </li>
+  <li>
+    <p>血糖监测装置</p>
+  </li>
+</ul>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h6 id="准备动物">准备动物</h6>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/test2.html" rel="alternate" type="text/html" title="Welcome!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/test2</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/test2.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<ol>
+  <li>
+    <p>实验开始前至少5天，在24°C±1°C、55%±5%湿度条件下饲养雄鼠，光照周期为12小时(8:00亮，20:00关)。允许小鼠自由进食和饮水。由于雌性小鼠对这种胰岛细胞毒素不太敏感，大多数STZ诱导的糖尿病小鼠研究都是在雄性动物身上进行的。虽然下面详细的方案设计是为了尽量减少可变性，但考虑到STZ治疗的发病率，建议组的大小为12 - 20个。</p>
+  </li>
+  <li>
+    <p>将所有小鼠准确称量至1g，随机分为对照组和实验组。每组的老鼠数量应该相等。</p>
+  </li>
+  <li>
+    <p>STZ处理前4小时，将各组笼内所有食物取出，正常供水。</p>
+  </li>
+</ol>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<h6 id="用stz处理动物">用STZ处理动物</h6>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+<ol>
+  <li>
+    <p>将STZ称入ep管中，用铝箔覆盖管;三只老鼠用一ep管。准备柠檬酸缓冲液。</p>
+  </li>
+  <li>
+    <p>注射前立即将STZ溶解在柠檬酸钠缓冲液(pH 4.5)中，最终浓度为4mg
+/ml。由于STZ在柠檬酸缓冲液中溶解后15 - 20分钟内降解，使用前应立即配制STZ溶液，并在溶解后5分钟内腹腔注射(10mg/kg)。</p>
+  </li>
+  <li>
+    <p>实验组动物。给对照组小鼠注射等量的柠檬酸缓冲液(pH 4.5) 腹腔注射。对STZ静脉注射和腹腔注射的反应是相同的。</p>
+  </li>
+  <li>
+    <p>把老鼠放回笼子。提供标准鼠粮和10%的蔗糖水，自由取食。</p>
+  </li>
+  <li>
+    <p>接下来连续的4天，重复步骤3到7。</p>
+  </li>
+  <li>
+    <p>试验第6天，用普通水代替10%蔗糖水。</p>
+  </li>
+  <li>
+    <ul>
+      <li>
+        <p>对于早期T1D的研究:在实验第14天(最后一次STZ注射后9天)，将所有小鼠禁食6小时(例如，从7:00-13:00)。使用血糖监测分析尾静脉血液样本中的血糖系统，以确保在STZ处理的小鼠高血糖。如果STZ注射的小鼠在实验第28天之前满足这些条件，步骤10b可以省略。如果STZ注射组的小鼠在第14天达到糖尿病状态的小于40%，重新测试血糖浓度。</p>
+      </li>
+      <li>
+        <p>由于血糖浓度被认为是糖尿病的准确诊断工具，一般不需要测量血液中的胰岛素浓度。对于糖尿病第一次试验失败的动物的重新试验和涉及晚期T1DM的研究:在实验第28天，将所有小鼠禁食6小时(例如，从7:00到13:00)。使用血糖监测系统量化尾静脉血液样本中的血糖，以确认STZ注射引起的高血糖。</p>
 
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+        <p>与对照组小鼠相比，STZ注射小鼠的空腹血糖浓度应为&gt;150 mg/dl (8.3 mmol/L)和/或显著升高。</p>
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+        <p>STZ注射3周后，50%的小鼠出现严重糖尿病，血糖浓度通常在&gt;300至600
+mg/dl(16.7至33.3 mmol/L)范围内。</p>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+        <p>如果STZ注射小鼠&gt;60%到第4周仍未出现轻度高血糖，应在第7周开始第二轮STZ注射，重复步骤3 ~ 8，加步骤10a。第二轮STZ无需向动物提供10%蔗糖水，致死性低血糖的发生率远低于第一次接触。</p>
+      </li>
+    </ul>
+  </li>
+</ol>
 
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to CYLBlog!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/test3.html" rel="alternate" type="text/html" title="Welcome to CYLBlog!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/test3</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/test3.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<p>血糖浓度为18mg /dl = 1mM。</p>
 
-<p>Jekyll requires blog post files to be named according to the following format:</p>
+<ol>
+  <li>
+    <p>检查一种试验药物是否有能力纠正糖尿病或影响高血糖:一旦糖尿病状态确定如第10步所述，就开始用试验降糖药进行治疗，包括设置接受溶剂注射作为对照组。</p>
 
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome4啊!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/test4.html" rel="alternate" type="text/html" title="Welcome4啊!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/test4</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/test4.html"><![CDATA[<p>写点东西
-写点东西
-You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[写点东西 写点东西 You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/08/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-08-27T22:39:13+08:00</published><updated>2022-08-27T22:39:13+08:00</updated><id>http://localhost:4000/jekyll/update/2022/08/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/08/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
-
-<p>Jekyll requires blog post files to be named according to the following format:</p>
-
-<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
-
-<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
-
-<p>Jekyll also offers powerful support for code snippets:</p>
-
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
-
-<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.]]></summary></entry></feed>
+    <p>研究慢性疾病或糖尿病并发症:在第7周重复步骤3到8，省略10%蔗糖水，以维持STZ处理的高血糖。
+如果糖尿病动物用于研究T1DM的早期机制或筛查早期治疗糖尿病的化合物，则当STZ注射小鼠的血糖浓度为&gt;150 mg/dl (8.3 mmol/L)且/或高于对照组小鼠时，认为该动物适合研究。</p>
+  </li>
+</ol>]]></content><author><name></name></author><category term="Protocols" /><summary type="html"><![CDATA[Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.]]></summary></entry></feed>
