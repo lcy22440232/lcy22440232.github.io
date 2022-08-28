@@ -33,14 +33,3 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 gem "webrick", "~> 1.7"
-
-
-# 根据Jekyll介绍添加的Gem包
-# source 'https://rubygems.org'
-
-# require 'json'
-# require 'open-uri'
-# versions = JSON.parse(open('https://pages.github.com/versions.json').read)
-
-# gem 'github-pages', versions['github-pages']
-# 根据Jekyll介绍添加的Gem包
