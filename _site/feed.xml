@@ -1,4 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-28T21:54:53+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CYL’s Homepage</title><subtitle>求真求确    必邃必专</subtitle><entry><title type="html">Construction of mouse and rat model of T1D</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Construction of mouse and rat model of T1D" /><published>2022-08-28T21:50:13+08:00</published><updated>2022-08-28T21:50:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html"><![CDATA[<p>Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-28T22:08:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CYL’s Homepage</title><subtitle>求真求确    必邃必专</subtitle><entry><title type="html">特殊符号汇总</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1.html" rel="alternate" type="text/html" title="特殊符号汇总" /><published>2022-08-28T22:00:13+08:00</published><updated>2022-08-28T22:00:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1.html"><![CDATA[<p>A、希腊字母大写 ΑΒΓΔΕΖΗΘΙΚ∧ΜΝΞΟ∏Ρ∑ΤΥΦΧΨΩ</p>
+
+<p>B、希腊字母小写 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω</p>
+
+<p>C、俄文字母大写 АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</p>
+
+<p>D、俄文字母小写 а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я</p>
+
+<p>E、注音符号 ㄅㄉㄓㄚㄞㄢㄦㄆㄊㄍㄐㄔㄗㄧㄛㄟㄣㄇㄋㄎㄑㄕㄘㄨㄜㄠㄤㄈㄏㄒㄖㄙㄩㄝㄡㄥ</p>
+
+<p>F、拼音 ā á ǎ à、ō ó ǒ ò、ê ē é ě è、ī í ǐ ì、ū ú ǔ ù、ǖ ǘ ǚ ǜ ü</p>
+
+<p>G、日文平假名 ぁぃぅぇぉかきくけこんさしすせそたちつってとゐなにぬねのはひふへほゑまみむめもゃゅょゎを</p>
+
+<p>H、日文片假名 ァィゥヴェォカヵキクケヶコサシスセソタチツッテトヰンナニヌネノハヒフヘホヱマミムメモャュョヮヲ</p>
+
+<p>I、标点符号 ˉˇ¨‘’々～‖∶”’‘｜〃〔〕《》「」『』．〖〗【【】（）〔〕｛｝</p>
+
+<p>J、数字序号 ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫ①②③④⑤⑥⑦⑧⑨⑩一二三四五六七八九十</p>
+
+<p>K、数学符号 ≈≡≠＝≤≥＜＞≮≯∷±＋－×÷／∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌∽√</p>
+
+<p>L、单位符号 °′〃＄￡￥‰％℃¤￠</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>M、制表符 ┌┍┎┏┐┑┒┓—┄┈├┝┞┟┠┡┢┣</td>
+      <td>┆┊┬┭┮┯┰┱┲┳┼┽┾┿╀╂╁╃</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>N、特殊符号 §№☆★○●◎◇◆□■△▲※→←↑↓〓＃＆＠＼＾＿</p>
+
+<p>O、补充收集 ⊙●○①⊕◎Θ⊙¤㊣▂ ▃ ▄ ▅ ▆ ▇ █ █ ■ ▓ 回 □ 〓≡ ╝╚╔ ╗╬ ═ ╓ ╩ ┠ ┨┯ ┷┏ ┓┗ ┛┳⊥『』┌♀◆◇◣◢◥▲▼△▽⊿</p>]]></content><author><name></name></author><category term="Protocols" /><summary type="html"><![CDATA[A、希腊字母大写 ΑΒΓΔΕΖΗΘΙΚ∧ΜΝΞΟ∏Ρ∑ΤΥΦΧΨΩ]]></summary></entry><entry><title type="html">Construction of mouse and rat model of T1D</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Construction of mouse and rat model of T1D" /><published>2022-08-28T21:50:13+08:00</published><updated>2022-08-28T21:50:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html"><![CDATA[<p>Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.</p>
 
 <p>For the rat model of T1D, male rats (Sprague–Dawley) were fasted for 16 h and received intraperitoneal injection of streptozotocin (40 mg kg^–1^ ) for 5 d. Two weeks after injection, fasted rats with hyperglycemia over 16.6 mmol liter^–1^ glucose were considered diabetic and used for further experiments.</p>
 
