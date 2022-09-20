@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "5. 逻辑值用途"
+date:   2022-09-20 21:16:22 +0800
+categories: R语言
+---
+
+## 数据类型和数据结构
+
+**关于数据类型的补充内容**：
+
+- 认识三种基本的数据类型：数字，逻辑，字符串；
+
+- 向量中常会用到 NA 和 NULL ，这里介绍一下这两个词语与区别：
+
+```r
+length(c(NA, NA, NULL))
+
+c(NA, NA, NULL, NA)
+```
+
+- NA 代表的是"缺失"，NULL 代表的是"不存在"。
+
+- NA 缺失就想占位符，代表这里没有一个值，但位置存在。
+
+- NULL 代表的就是数据不存在。
+
+- 逻辑型数据通常用来做什么？
+
+逻辑向量主要用于向量的逻辑运算，例如：比较大小和筛选数据
+
+```r
+# 比较大小：
+c(1, 2, 3) > 2
+a = c(1, 2, 3)
+b = a > 2
+
+# 例如我们需要从一个线性表中筛选大于等于 60 且小于 70 的数据：
+vector = c(10, 40, 78, 64, 53, 62, 69, 70)
+vector[vector >= 60 & vector < 70]
+
+# 拓展：与、或、非的使用；
+vector[vector >= 60 | vector < 30]
+vector[!vector >= 60]
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

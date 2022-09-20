@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "10. 数据框"
+date:   2022-09-20 21:16:26 +0800
+categories: R语言
+---
+
+**数据框：**
+
+- 数据框（Data frame）可以理解成我们常说的"表格"，也是 R 语言中的数据结构之一。数据框每一列都有一个唯一的列名，长度都是相等的，**同一列的数据类型需要一致，不同列的数据类型可以不一样。**
+
+- R 语言数据框使用 data.frame() 函数来创建，语法格式如下：
+
+- **…**: 列向量，可以是任何类型（字符型、数值型、逻辑型），一般以 tag = value 的形式表示，也可以是 value。
+
+- **row.names**: 行名，默认为 NULL，可以设置为单个数字、字符串或字符串和数字的向量。
+
+```r
+ data.frame(…, row.names = NULL)
+```
+
+- 数据框常用操作：
+
+```r
+  table = data.frame(
+    '姓名' = c("张三", "李四"),
+    '工号' = c("001","002"),
+    '月薪' = c(1000, 2000)
+  )
+
+  table
+
+  # 获取数据结构
+  str(table)
+
+  # 显示概要
+  summary(table)
+
+  # 提取指定的列
+  result <- data.frame(table$姓名,table$月薪)
+  print(result)
+
+  # 提取前面两行
+  table[1:2,]
+
+  # 读取第 1 、2 行的第 1 、2 列数据：
+  table[c(1,2),c(1,2)]
+
+  # 添加部门列
+  table$'部门' <- c("运营","技术")
+
+  table
+
+
+
+  ###############
+  # 数据框的级联 —— 行合并和列合并（与矩阵类似）
+  # 创建另一个数据框：并进行cbind()
+  table2 <- data.frame("公司" = c("Google","Taobao"),
+                       "性别" = c("男","男"))
+
+  result <- cbind(table,table2)
+  result
+
+
+  # 行拼接：
+  table = data.frame(
+    姓名 = c("张三", "李四","王五"),
+    工号 = c("001","002","003"),
+    月薪 = c(1000, 2000,3000)
+  )
+  newtable = data.frame(
+    姓名 = c("小明", "小白"),
+    工号 = c("101","102"),
+    月薪 = c(5000, 7000)
+  )
+  # 合并两个数据框
+  result <- rbind(table,newtable)
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

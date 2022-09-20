@@ -1,0 +1,230 @@
+---
+layout: post
+title:  "17. apply家族"
+date:   2022-09-20 21:16:33 +0800
+categories: R语言
+---
+
+## apply系列函数
+
+### 为什么用apply
+
+为什么for循环运行这么慢？为什么for循环要写这么长？当你还在为这些而头疼的时候，别人已经用apply一行代码就解决了你的问题！那么不用循环怎么实现迭代呢？这就是今天要登场的**`apply`函数族**。它不是一个函数，**「而是一族功能类似的函数」**。
+
+### 家族成员之间的关系
+
+apply系列函数的作用对象是**「数组（array，可以是多维）**「或者」**列表（list）」**。其中vector是一维的array，dataframe可以看作特殊的list。
+
+| 作用目标  | 在每个元素上应用               | 在子集合上应用  |
+| ----- | ---------------------- | -------- |
+| array | `apply`                | `tapply` |
+| list  | `lapply`：包括sapply（简化版） | `by`     |
+
+### 最简单的apply函数
+
+- 语法：`apply(array, margin, FUN, ...)`
+
+- 稍加解释：margin表示数组引用的第几维下标（即array[index1, index2, ...]中的第几个index），1对应为1表示行，2表示列，c(1,2)表示行列。
+
+- 不用多说，直接看例子！
+
+```r
+# 这里创建了一个数组，如果是matrix或者data.frame也是同样的道理！
+m <- array(c(1:10), dim=c(2,5))
+m
+#     [,1] [,2] [,3] [,4] [,5]
+# [1,]    1    3    5    7    9
+# [2,]    2    4    6    8   10
+
+# 这里的意思就是在第一个维度（也就是行）上进行求和！
+apply(m, 1, sum) 
+# [1] 25 30
+
+# 这里的意思就是在第二个维度（也就是列）上进行求和！
+apply(m, 2, sum)
+# [1]  3  7 11 15 19
+
+# 如果是三维array，也是同样的道理：
+a <- array(c(1:24), dim=c(2,3,4))
+
+# 画图更方便理解！
+apply(a, 1, sum)
+apply(a, 2, sum)
+apply(a, c(1,2), sum)
+```
+
+### 分组运算之tapply
+
+- 语法：`tapply(array, indices, FUN=NULL)`
+
+- 别看看着很唬人，实际上并不复杂，不需要多么官方的解释，你只需要知道tapply和apply不同的是，**「它的margin是你自己指定的！也就是indices」**，再简单点说，就是**「指定一个分组变量」**！
+
+- 直接看例子！
+
+```r
+# 先看一维的向量，先创建一个向量，再指定分组变量；
+v <- c(1:5)
+group <- c('a','a','a','b','b')
+tapply(v, group)
+# [1] 1 1 1 2 2
+tapply(v, ind, sum)
+# a b 
+# 6 9 
+
+# 同样的道理，对于二维数组或矩阵：
+m <- matrix(c(1:10), nrow=2)
+group <- matrix(c(rep(1,5), rep(2,5)), nrow=2)
+group
+#     [,1] [,2] [,3] [,4] [,5]
+# [1,]    1    1    1    2    2
+# [2,]    1    1    2    2    2
+
+tapply(m, ind, mean)
+# 1 2 
+# 3 8 
+```
+
+### 数据框中的tapply之by
+
+- 语法：`by(dataframe, INDICES, FUN, ..., simplify=TRUE)`
+
+- `by`可以当成dataframe上的`tapply`。`indices`应当和dataframe每列的长度相同。返回值是`by`类型的object。若simplify=FALSE，本质上是个list;
+
+- 直接看例子：
+
+```r
+df <- data.frame(a=c(1:5), b=c(6:10))
+group <- c(1,1,1,2,2)
+res <- by(df, group, colMeans)
+res
+# group: 1
+# a b 
+# 2 7 
+# ------------------------------------------------------------ 
+# group: 2
+#  a   b 
+# 4.5 9.5 
+
+class(res)
+# [1] "by"
+names(res)
+# [1] "1" "2"
+```
+
+### 列表遍历之lapply
+
+- 语法：`lapply(list, FUN, ...)`
+
+- 在`list`上逐个元素调用`FUN`。也可以用于dataframe上，因为dataframe是一种特殊形式的list，但是不建议使用；
+
+```r
+# 需要注意的是lapply返回的数据也是一个list；
+lst <- list(a=c(1:5), b=c(6:10))
+lapply(lst, mean)
+# $a
+# [1] 3
+
+# $b
+# [1] 8
+a <- as.data.frame(lapply(lst, mean))
+
+# 拓展：
+RowNames <- paste("pre",LETTERS,sep = "_")
+RowNames
+ [1] "pre_A" "pre_B" "pre_C" "pre_D" "pre_E" "pre_F" "pre_G" "pre_H" "pre_I"
+[10] "pre_J" "pre_K" "pre_L" "pre_M" "pre_N" "pre_O" "pre_P" "pre_Q" "pre_R"
+[19] "pre_S" "pre_T" "pre_U" "pre_V" "pre_W" "pre_X" "pre_Y" "pre_Z"
+
+# 我想把A-Z再取出来怎么办呢？尝试自己动手写！
+unlist(lapply(strsplit(RowNames,"_"), function(x) x[2]))
+```
+
+#### 简化版本之sapply
+
+- 语法：`sapply(list, FUN, ..., simplify, USE.NAME=TRUE)`
+
+- 比`lapply`多了一个`simplify`参数。如果`simplify=FALSE`，则等价于`lapply`。否则，在上一种情况的基础上，将`lapply`输出的list简化为vector或matrix
+
+> 也就是他帮我们省事了，我们不需要再多一步unlist的过程了！
+
+```r
+######### sapply ############
+# sapply如果设定simplify参数为True，则返回向量或矩阵；
+lst <- list(a=c(1:5), b=c(6:10))
+sapply(lst, mean,simplify = T)  # 返回矩阵
+
+# 拓展：
+RowNames <- paste("pre",LETTERS,sep = "_")
+# 尝试自己动手写！
+sapply(strsplit(RowNames,"_"), function(x) x[2])
+```
+
+### 多个参数之mapply
+
+- 语法：`mapply(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)`
+
+- `mapply`是多变量版的`sapply`，参数(...)部分可以接收多个数据，要求多个数据的长度相同，或者是整数倍关系。返回值是vector或matrix，取决于`FUN`返回值是一个还是多个。
+
+- 直接看例子：
+
+```r
+# 两个list作为输入：
+mapply(sum, list(a=1,b=2,c=3), list(a=10,b=20,d=30))
+# a  b  c 
+# 11 22 33 
+
+# 两个向量作为输入，返回向量：
+mapply(function(x,y) x^y, c(1:5), c(1:5))
+# [1]    1    4   27  256 3125
+
+# 返回矩阵：
+mapply(function(x,y) c(x+y, x^y), c(1:5), c(1:5))
+#      [,1] [,2] [,3] [,4] [,5]
+# [1,]    2    4    6    8   10
+# [2,]    1    4   27  256 3125
+```
+
+### 应用：使用tapply实现长数据转宽数据
+
+```r
+# 定义一个数据框：
+df <- data.frame(year=kronecker(2001:2003, rep(1,4)), loc=c('beijing','beijing','shanghai','shanghai'), type=rep(c('A','B'),6), sale=rep(1:12))
+
+# 查看内容
+> df
+# year      loc type sale
+# 1  2001  beijing    A    1
+# 2  2001  beijing    B    2
+# 3  2001 shanghai    A    3
+# 4  2001 shanghai    B    4
+# 5  2002  beijing    A    5
+# 6  2002  beijing    B    6
+# 7  2002 shanghai    A    7
+# 8  2002 shanghai    B    8
+# 9  2003  beijing    A    9
+# 10 2003  beijing    B   10
+# 11 2003 shanghai    A   11
+# 12 2003 shanghai    B   12
+
+# tapply又叫在干啥？对啦！分组运算呗！
+tapply(df$sale, df$year, sum)
+
+# 指定两个分组变量呢？
+# 先按year分，内部再按loc分！
+tapply(df$sale, df[,c('year','loc')], sum)
+#      loc
+# year   beijing shanghai
+#  2001       3        7
+#  2002      11       15
+#  2003      19       23
+tapply(df$sale, df[,c('year','type')], sum)
+#      type
+# year    A  B
+#  2001  4  6
+#  2002 12 14
+#  2003 20 22
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

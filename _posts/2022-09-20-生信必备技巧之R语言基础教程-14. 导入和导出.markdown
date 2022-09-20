@@ -1,0 +1,103 @@
+---
+layout: post
+title:  "14. 导入和导出"
+date:   2022-09-20 21:16:30 +0800
+categories: R语言
+---
+
+# Part3基本数据管理
+
+- **导入csv文件**：
+
+- csv（Comma-Separated Values，CSV） 是一种非常流行的表格存储文件格式，这种格式适合储存中型或小型数据规模的数据。
+  
+  csv 用**逗号**来分割列，如果数据中含有逗号，就要用双引号将整个数据块包括起来。
+  
+  例如:
+
+```r
+id,name,url,likes
+1,Google,www.google.com,111
+2,Runoob,www.runoob.com,222
+3,Taobao,www.taobao.com,333
+```
+
+- 读取csv文件：
+
+```r
+data <- read.csv("sites.csv", encoding="UTF-8")
+```
+
+**注意：**如果不设置 encoding 属性，read.csv 函数将默认以操作系统默认的文字编码进行读取，如果你使用的是 Windows 中文版系统且没有设置过系统的默认编码，那系统的默认编码应该是 GBK。所以大家请尽可能地统一文字编码以防出错。
+
+- read.csv() 函数返回的是数据框，我们可以很方便的对数据进行统计处理，以下实例我们查看行数和列数：
+
+```r
+is.data.frame(data)  # 查看是否是数据框
+ncol(data)  # 列数
+nrow(data)  # 行数
+```
+
+- 保存为csv文件：
+
+```r
+# likes 为 222 的数据
+retval <- subset(data, likes == 222)
+
+# 写入新的文件
+write.csv(retval,"runoob.csv", row.names = FALSE)
+newdata <- read.csv("runoob.csv")
+```
+
+- **导入Excel文件**：
+  
+  - Excel 格式的文件主要是 xls 或 xlsx，这两种文件可以在 R 语言中导入 xlsx 库来实现直接的读取。
+  
+  R 语言读写 Excel 文件需要安装扩展包，我们可以在 R 到控制台输入以下命令来安装：
+
+```r
+install.packages("xlsx")
+library("xlsx")
+```
+
+- 使用 read.xlsx() 函数来读取 Excel 数据：
+
+```r
+# 读取 sites.xlsx 第一个工作表数据
+data <- read.xlsx("sites.xlsx", sheetIndex = 1)
+
+write.xls(data, "sites.xls",
+         sheetName = "生信师兄",append = TRUE)
+```
+
+- **导入txt文件**：
+  
+  - 参数解释:
+  
+  - header：传入一个逻辑值，True/False，表示是否将第一行作为列名；
+  
+  - sep ：参数sep允许你导入那些使用逗号以外的符号来分隔行内数据的文件。你可以使用 sep="\t"读取以制表符分隔的文件，此参数的默认值为sep=""，即表示分隔符可为一个或多个空格、制表符、换行符或回车符。
+  
+  - row.names：用于指定行名，可以用数字，表示第几列作为行名，也可以直接用列名；
+  
+  - stringsAsFactors：默认情况下，字符型变量将转换为因子。我们并不总是希望程序这样做（例如处理一个含有被调查者评论的变量时） 。
+  
+  - 使用read.table()从带分隔符的文本文件中导入数据。此函数可读入一个表格格式 的文件并将其保存为一个数据框。其语法如下：
+
+```r
+data <- read.table(file, header = "逻辑值",sep = "\t", row.names = 1,stringsAsFactors=FALSE)
+```
+
+- 例子：
+
+```r
+read.table("sites.csv")
+
+write.table(data,file = "sites.txt")
+
+read.table("sites.txt")
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

@@ -1,0 +1,145 @@
+---
+layout: post
+title:  "8&9. 矩阵基础及进阶"
+date:   2022-09-20 21:16:25 +0800
+categories: R语言
+---
+
+**矩阵：**
+
+矩阵是一个二维数组,只是每个元素都拥有相同的模式(数值型、字符型或逻辑型) 。可通过函数matrix创建矩阵。
+
+- 创建矩阵：
+
+```r
+ # 基本语法：
+  matrix(data = 1:10, nrow = 2, ncol = 5, byrow = TRUE, dimnames = NULL)
+
+  # data 向量，矩阵的数据；nrow 行数；ncol 列数；
+  # byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；
+
+  # 基本方法：
+  y <- matrix(1: 20, nrow=5, ncol=4)
+
+  # 指定行名和列名：
+  cells <- c(1,26,24,68) 
+  rnames <- c("R1","R2") 
+  cnames <- c("C1","C2") 
+  mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames, cnames))
+
+  # byrow 为 TRUE 元素按行排列
+  M <- matrix(c(3:14), nrow = 4, byrow = TRUE)
+
+  # Ebyrow 为 FALSE 元素按列排列
+  N <- matrix(c(3:14), nrow = 4, byrow = FALSE)
+
+
+  # 行名和列名也可在创建完矩阵之后再定义：
+  rownames(N) = c("row1", "row2", "row3", "row4")
+  colnames(N) = c("col1", "col2", "col3")
+```
+
+- 矩阵常用基本操作：
+
+```r
+  # 获取矩阵的维度：
+  dim(x)
+
+  # 获取矩阵的行数和列数：
+  dim(x)[1]
+  dim(x)[2]
+
+  nrow(x)
+  ncol(x)
+
+
+  # 转置矩阵
+  # R 语言矩阵提供了 t() 函数，可以实现矩阵的行列互换。
+  # 例如有个 m 行 n 列的矩阵，使用 t() 函数就能转换为 n 行 m 列的矩阵。
+
+  # 创建一个 2 行 3 列的矩阵
+  M = matrix( c(2,6,5,1,10,4), nrow = 2,ncol = 3,byrow = TRUE)
+
+  # 转换为 3 行 2 列的矩阵
+  t(M)
+
+
+  # 矩阵加减：必须行数和列数都相等；
+  # 创建 2 行 3 列的矩阵
+  matrix1 <- matrix(c(7, 9, -1, 4, 2, 3), nrow = 2)
+  matrix2 <- matrix(c(6, 1, 0, 9, 3, 2), nrow = 2)
+
+  # 两个矩阵相加
+  matrix1 + matrix2
+
+  # 两个矩阵相减
+  matrix1 - matrix2
+
+
+  # 矩阵乘除：必须行数和列数都相等；
+  # 两个矩阵对应元素相乘
+  matrix1 * matrix2
+
+  # 两个矩阵相除
+  matrix1 / matrix2
+
+
+  ## 线性代数中的矩阵相乘：必须满足m1*n * n*m2；即第一个矩阵的列数要和第二个矩阵的行数相等；
+  # 创建 2 行 3 列的矩阵
+  matrix1 <- matrix(c(7, 9, -1, 4, 2, 3), nrow = 5)
+  matrix2 <- matrix(c(6, 1, 0, 9, 3, 2), nrow = 2)
+
+  matrix1 %*% matrix2
+```
+
+- 矩阵进阶操作：
+
+```r
+  # 矩阵求行、列之和、平均数；
+  rowSums(a) #按行求和
+  colSums(a) #按列求和
+
+  mean(a) #均值
+  rowMeans(a) #行均值
+  colMeans(a) #列均值
+
+  # 矩阵行拼接和列拼接
+  a <- matrix(rnorm(15),5,3)
+  b <- matrix(rnorm(15),3,5)
+  cbind(a,b)
+  bind(a,b)
+
+  # 矩阵求逆：solve()函数：
+  a <- matrix(rnorm(16),4,4)
+  solve(a)
+
+  # 矩阵与其逆矩阵的乘积为对角矩阵
+  round(solve(a)%*%a)
+
+  # 对于奇异阵，并不存在逆矩阵，但是可以计算其广义逆矩阵
+  a <- matrix(1:16,4,4)
+  solve(a) # 报错；
+
+  library(MASS)
+  ginv(a)
+
+  # 提取矩阵的主对角线元素
+  mat <- matrix(1:16,4,4)
+  diag(mat)
+
+  # 生成对角线为1的对角矩阵：
+  m <- diag(4)
+
+  # 求矩阵的特征值和特征向量：
+  d = matrix(c(17,22,27,22,29,36,27,36,45),3,3)
+  d.e= eigen(d)
+
+  # 矩阵的奇异值分解：
+  A=matrix(1:18,3,6)
+  A.s = svd(A)
+  A.s$u%*%diag(A.s$d)%*%t(A.s$v) # a = udv’；u为左奇异向量；v为右奇异向量；
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

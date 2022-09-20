@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "13. 列表"
+date:   2022-09-20 21:16:29 +0800
+categories: R语言
+---
+
+- **列表：**
+  
+  列表是 R 语言的对象集合，可以用来保存不同类型的数据，可以是数字、字符串、向量、矩阵、另一个列表等，还可以包含函数。
+  
+  - R 语言创建列表使用 **list()** 函数。
+
+```r
+list_data <- list("runoob", "google", c(11,22,33), 123, 51.23, 119.1)
+```
+
+- 我们可以使用 **names()** 函数给列表的元素命名：
+
+```r
+  # 列表包含向量、矩阵、列表
+  list_data <- list(c("Google","Runoob","Taobao"), matrix(c(1,2,3,4,5,6), nrow = 2),
+  list("runoob",12.3))
+
+  # 给列表元素设置名字
+  names(list_data) <- c("Sites", "Numbers", "Lists")
+```
+
+- 访问列表：列表中的元素可以使用索引来访问，如果使用来 **names()** 函数命名后，我们还可以使用对应名字来访问：
+
+```r
+  # 访问列表的第三个元素
+  list_data[3]
+
+  # 访问第一个向量元素
+  list_data$Numbers
+```
+
+- 操作列表元素
+
+我们可以对列表进行添加、删除、更新的操作，如下实例：
+
+```r
+  # 添加元素
+  list_data[4] <- "新元素"
+  list_data[4]
+
+  # 删除元素
+  list_data[4] <- NULL
+
+  # 删除后输出为 NULL
+  list_data[4]
+
+  # 更新元素
+  list_data[3] <- "我来替换第三个元素"
+  list_data[3]
+```
+
+- 合并列表：我们可以使用 **c()** 函数将多个列表合并为一个列表：
+
+```r
+ # 创建两个列表
+  list1 <- list(1,2,3)
+  list2 <- list("Google","Runoob","Taobao")
+
+  # 合并列表
+  merged.list <- c(list1,list2)
+```
+
+- 列表转换为向量：要将列表转换为向量可以使用 **unlist()** 函数，将列表转换为向量，可以方便我们进行算术运算：
+
+```r
+  # 创建列表
+  list1 <- list(1:5)
+
+  list2 <-list(10:14)
+
+  # 转换为向量
+  v1 <- unlist(list1)
+  v2 <- unlist(list2)
+
+  # 两个向量相加
+  result <- v1 + v2
+```
+
+- 深入探究一波：
+
+```r
+  # 对于列表来说：[]和[[]]有啥区别？
+  list1 + list2
+
+  list1[1] + list2[1]
+
+  list1[[1]] + list2[[1]]
+  # 同样的当 x 的数据类型是 list 时，[]操作将返回一个 list 数据类型，
+  # 且将是 x 的一个子集。如果使用 [[]] 操作，将返回 list 中的一个数据，
+  # 该数据类型由本身确定，和 list 无关。对于 data.frame 数据也是如此。
+  table = data.frame(
+    '姓名' = c("张三", "李四"),
+    '工号' = c("001","002"),
+    '月薪' = c(1000, 2000)
+  )
+  table[1]
+  table[[1]]
+  table[,1]
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

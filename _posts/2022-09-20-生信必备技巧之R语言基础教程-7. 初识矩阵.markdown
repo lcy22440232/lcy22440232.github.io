@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "7. 初识矩阵"
+date:   2022-09-20 21:16:24 +0800
+categories: R语言
+---
+
+**矩阵：**
+
+矩阵是一个二维数组,只是每个元素都拥有相同的模式(数值型、字符型或逻辑型) 。可通过函数matrix创建矩阵。
+
+- 创建矩阵：
+
+```r
+# 基本语法：
+matrix(data = 1:10, nrow = 2, ncol = 5, byrow = TRUE, dimnames = NULL)
+
+# data 向量，矩阵的数据；nrow 行数；ncol 列数；
+# byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；
+
+# 基本方法：
+y <- matrix(1: 20, nrow=5, ncol=4)
+
+# 指定行名和列名：
+cells <- c(1,26,24,68) 
+rnames <- c("R1","R2") 
+cnames <- c("C1","C2") 
+mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames, cnames))
+
+# byrow 为 TRUE 元素按行排列
+M <- matrix(c(3:14), nrow = 4, byrow = TRUE)
+
+# Ebyrow 为 FALSE 元素按列排列
+N <- matrix(c(3:14), nrow = 4, byrow = FALSE)
+
+
+# 行名和列名也可在创建完矩阵之后再定义：
+rownames(N) = c("row1", "row2", "row3", "row4")
+colnames(N) = c("col1", "col2", "col3")**矩阵：**
+
+矩阵是一个二维数组,只是每个元素都拥有相同的模式(数值型、字符型或逻辑型) 。可通过函数matrix创建矩阵。
+
+- 创建矩阵：
+
+```r
+# 基本语法：
+matrix(data = 1:10, nrow = 2, ncol = 5, byrow = TRUE, dimnames = NULL)
+
+# data 向量，矩阵的数据；nrow 行数；ncol 列数；
+# byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；
+
+# 基本方法：
+y <- matrix(1: 20, nrow=5, ncol=4)
+
+# 指定行名和列名：
+cells <- c(1,26,24,68) 
+rnames <- c("R1","R2") 
+cnames <- c("C1","C2") 
+mymatrix <- matrix(cells, nrow = 2, ncol = 2, byrow = TRUE, dimnames = list(rnames, cnames))
+
+# byrow 为 TRUE 元素按行排列
+M <- matrix(c(3:14), nrow = 4, byrow = TRUE)
+
+# Ebyrow 为 FALSE 元素按列排列
+N <- matrix(c(3:14), nrow = 4, byrow = FALSE)
+
+
+# 行名和列名也可在创建完矩阵之后再定义：
+rownames(N) = c("row1", "row2", "row3", "row4")
+colnames(N) = c("col1", "col2", "col3")
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

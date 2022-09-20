@@ -1,157 +1,1053 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-08-28T22:08:36+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CYL’s Homepage</title><subtitle>求真求确    必邃必专</subtitle><entry><title type="html">特殊符号汇总</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1.html" rel="alternate" type="text/html" title="特殊符号汇总" /><published>2022-08-28T22:00:13+08:00</published><updated>2022-08-28T22:00:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll1.html"><![CDATA[<p>A、希腊字母大写 ΑΒΓΔΕΖΗΘΙΚ∧ΜΝΞΟ∏Ρ∑ΤΥΦΧΨΩ</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-09-20T21:44:22+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CYL’s Homepage</title><subtitle>求真求确    必邃必专</subtitle><entry><title type="html">17. apply家族</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-17.-apply%E5%AE%B6%E6%97%8F.html" rel="alternate" type="text/html" title="17. apply家族" /><published>2022-09-20T21:16:33+08:00</published><updated>2022-09-20T21:16:33+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-17.%20apply%E5%AE%B6%E6%97%8F</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-17.-apply%E5%AE%B6%E6%97%8F.html"><![CDATA[<h2 id="apply系列函数">apply系列函数</h2>
 
-<p>B、希腊字母小写 α β γ δ ε ζ η θ ι κ λ μ ν ξ ο π ρ σ τ υ φ χ ψ ω</p>
+<h3 id="为什么用apply">为什么用apply</h3>
 
-<p>C、俄文字母大写 АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</p>
+<p>为什么for循环运行这么慢？为什么for循环要写这么长？当你还在为这些而头疼的时候，别人已经用apply一行代码就解决了你的问题！那么不用循环怎么实现迭代呢？这就是今天要登场的<strong><code class="language-plaintext highlighter-rouge">apply</code>函数族</strong>。它不是一个函数，<strong>「而是一族功能类似的函数」</strong>。</p>
 
-<p>D、俄文字母小写 а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я</p>
+<h3 id="家族成员之间的关系">家族成员之间的关系</h3>
 
-<p>E、注音符号 ㄅㄉㄓㄚㄞㄢㄦㄆㄊㄍㄐㄔㄗㄧㄛㄟㄣㄇㄋㄎㄑㄕㄘㄨㄜㄠㄤㄈㄏㄒㄖㄙㄩㄝㄡㄥ</p>
-
-<p>F、拼音 ā á ǎ à、ō ó ǒ ò、ê ē é ě è、ī í ǐ ì、ū ú ǔ ù、ǖ ǘ ǚ ǜ ü</p>
-
-<p>G、日文平假名 ぁぃぅぇぉかきくけこんさしすせそたちつってとゐなにぬねのはひふへほゑまみむめもゃゅょゎを</p>
-
-<p>H、日文片假名 ァィゥヴェォカヵキクケヶコサシスセソタチツッテトヰンナニヌネノハヒフヘホヱマミムメモャュョヮヲ</p>
-
-<p>I、标点符号 ˉˇ¨‘’々～‖∶”’‘｜〃〔〕《》「」『』．〖〗【【】（）〔〕｛｝</p>
-
-<p>J、数字序号 ⅠⅡⅢⅣⅤⅥⅦⅧⅨⅩⅪⅫ①②③④⑤⑥⑦⑧⑨⑩一二三四五六七八九十</p>
-
-<p>K、数学符号 ≈≡≠＝≤≥＜＞≮≯∷±＋－×÷／∫∮∝∞∧∨∑∏∪∩∈∵∴⊥‖∠⌒⊙≌∽√</p>
-
-<p>L、单位符号 °′〃＄￡￥‰％℃¤￠</p>
+<p>apply系列函数的作用对象是<strong>「数组（array，可以是多维）</strong>「或者」<strong>列表（list）」</strong>。其中vector是一维的array，dataframe可以看作特殊的list。</p>
 
 <table>
+  <thead>
+    <tr>
+      <th>作用目标</th>
+      <th>在每个元素上应用</th>
+      <th>在子集合上应用</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td>M、制表符 ┌┍┎┏┐┑┒┓—┄┈├┝┞┟┠┡┢┣</td>
-      <td>┆┊┬┭┮┯┰┱┲┳┼┽┾┿╀╂╁╃</td>
+      <td>array</td>
+      <td><code class="language-plaintext highlighter-rouge">apply</code></td>
+      <td><code class="language-plaintext highlighter-rouge">tapply</code></td>
+    </tr>
+    <tr>
+      <td>list</td>
+      <td><code class="language-plaintext highlighter-rouge">lapply</code>：包括sapply（简化版）</td>
+      <td><code class="language-plaintext highlighter-rouge">by</code></td>
     </tr>
   </tbody>
 </table>
 
-<p>N、特殊符号 §№☆★○●◎◇◆□■△▲※→←↑↓〓＃＆＠＼＾＿</p>
-
-<p>O、补充收集 ⊙●○①⊕◎Θ⊙¤㊣▂ ▃ ▄ ▅ ▆ ▇ █ █ ■ ▓ 回 □ 〓≡ ╝╚╔ ╗╬ ═ ╓ ╩ ┠ ┨┯ ┷┏ ┓┗ ┛┳⊥『』┌♀◆◇◣◢◥▲▼△▽⊿</p>]]></content><author><name></name></author><category term="Protocols" /><summary type="html"><![CDATA[A、希腊字母大写 ΑΒΓΔΕΖΗΘΙΚ∧ΜΝΞΟ∏Ρ∑ΤΥΦΧΨΩ]]></summary></entry><entry><title type="html">Construction of mouse and rat model of T1D</title><link href="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Construction of mouse and rat model of T1D" /><published>2022-08-28T21:50:13+08:00</published><updated>2022-08-28T21:50:13+08:00</updated><id>http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/protocols/2022/08/28/welcome-to-jekyll.html"><![CDATA[<p>Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.</p>
-
-<p>For the rat model of T1D, male rats (Sprague–Dawley) were fasted for 16 h and received intraperitoneal injection of streptozotocin (40 mg kg^–1^ ) for 5 d. Two weeks after injection, fasted rats with hyperglycemia over 16.6 mmol liter^–1^ glucose were considered diabetic and used for further experiments.</p>
-
-<blockquote>
-  <p>Zhou, Yang, et al. “A small and highly sensitive red/far-red optogenetic switch for applications in mammals.” <em>Nature Biotechnology</em> (2021): 1-11.</p>
-</blockquote>
-
-<h5 id="小鼠t1d造模">小鼠T1D造模</h5>
-
-<ol>
-  <li>10 W雄鼠，饥饿16 h后，注射50 mg kg<sup>-1</sup> STZ（溶于0.1 M 柠檬酸buffer，pH = 4），连续注射5天。</li>
-  <li>注射结束2周后，测量空腹血糖值，超过16.6 M血糖浓度则认为造模成功。</li>
-</ol>
-
-<h5 id="大鼠t1d造模">大鼠T1D造模</h5>
-
-<p>基本方法与小鼠造模类似，大鼠为SD大鼠。STZ剂量为40 mg kg^-1^</p>
-
-<h5 id="赵星钧的方法">赵星钧的方法：</h5>
-
-<p><strong>Furman BL. Streptozotocin-Induced Diabetic
-Models in Mice and Rats. Curr Protoc Pharmacol. 2015 Sep 1;70:5.47.1-5.47.20.
-doi: 10.1002/0471141755.ph0547s70. PMID: 26331889.</strong></p>
-
-<h6 id="材料">材料</h6>
+<h3 id="最简单的apply函数">最简单的apply函数</h3>
 
 <ul>
   <li>
-    <p>C57BL/6雄性小鼠大约 25g, 8至12周龄;每个治疗组推荐12至20只动物</p>
+    <p>语法：<code class="language-plaintext highlighter-rouge">apply(array, margin, FUN, ...)</code></p>
   </li>
   <li>
-    <p>标准鼠粮</p>
+    <p>稍加解释：margin表示数组引用的第几维下标（即array[index1, index2, …]中的第几个index），1对应为1表示行，2表示列，c(1,2)表示行列。</p>
   </li>
   <li>
-    <p>50 mM柠檬酸钠缓冲液，pH 4.5:使用前立即准备</p>
-  </li>
-  <li>
-    <p>蔗糖</p>
-  </li>
-  <li>
-    <p>链脲霉素(STZ;10% (w/v)):在使用前准备</p>
-  </li>
-  <li>
-    <p>ep管</p>
-  </li>
-  <li>
-    <p>铝箔</p>
-  </li>
-  <li>
-    <p>注射器</p>
-  </li>
-  <li>
-    <p>血糖监测装置</p>
+    <p>不用多说，直接看例子！</p>
   </li>
 </ul>
 
-<h6 id="准备动物">准备动物</h6>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 这里创建了一个数组，如果是matrix或者data.frame也是同样的道理！</span><span class="w">
+</span><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">),</span><span class="w"> </span><span class="n">dim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">5</span><span class="p">))</span><span class="w">
+</span><span class="n">m</span><span class="w">
+</span><span class="c1">#     [,1] [,2] [,3] [,4] [,5]</span><span class="w">
+</span><span class="c1"># [1,]    1    3    5    7    9</span><span class="w">
+</span><span class="c1"># [2,]    2    4    6    8   10</span><span class="w">
 
-<ol>
-  <li>
-    <p>实验开始前至少5天，在24°C±1°C、55%±5%湿度条件下饲养雄鼠，光照周期为12小时(8:00亮，20:00关)。允许小鼠自由进食和饮水。由于雌性小鼠对这种胰岛细胞毒素不太敏感，大多数STZ诱导的糖尿病小鼠研究都是在雄性动物身上进行的。虽然下面详细的方案设计是为了尽量减少可变性，但考虑到STZ治疗的发病率，建议组的大小为12 - 20个。</p>
-  </li>
-  <li>
-    <p>将所有小鼠准确称量至1g，随机分为对照组和实验组。每组的老鼠数量应该相等。</p>
-  </li>
-  <li>
-    <p>STZ处理前4小时，将各组笼内所有食物取出，正常供水。</p>
-  </li>
-</ol>
+</span><span class="c1"># 这里的意思就是在第一个维度（也就是行）上进行求和！</span><span class="w">
+</span><span class="n">apply</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w"> 
+</span><span class="c1"># [1] 25 30</span><span class="w">
 
-<h6 id="用stz处理动物">用STZ处理动物</h6>
+</span><span class="c1"># 这里的意思就是在第二个维度（也就是列）上进行求和！</span><span class="w">
+</span><span class="n">apply</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="c1"># [1]  3  7 11 15 19</span><span class="w">
 
-<ol>
+</span><span class="c1"># 如果是三维array，也是同样的道理：</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">24</span><span class="p">),</span><span class="w"> </span><span class="n">dim</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># 画图更方便理解！</span><span class="w">
+</span><span class="n">apply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="n">apply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="n">apply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="分组运算之tapply">分组运算之tapply</h3>
+
+<ul>
   <li>
-    <p>将STZ称入ep管中，用铝箔覆盖管;三只老鼠用一ep管。准备柠檬酸缓冲液。</p>
+    <p>语法：<code class="language-plaintext highlighter-rouge">tapply(array, indices, FUN=NULL)</code></p>
   </li>
   <li>
-    <p>注射前立即将STZ溶解在柠檬酸钠缓冲液(pH 4.5)中，最终浓度为4mg
-/ml。由于STZ在柠檬酸缓冲液中溶解后15 - 20分钟内降解，使用前应立即配制STZ溶液，并在溶解后5分钟内腹腔注射(10mg/kg)。</p>
+    <p>别看看着很唬人，实际上并不复杂，不需要多么官方的解释，你只需要知道tapply和apply不同的是，<strong>「它的margin是你自己指定的！也就是indices」</strong>，再简单点说，就是<strong>「指定一个分组变量」</strong>！</p>
   </li>
   <li>
-    <p>实验组动物。给对照组小鼠注射等量的柠檬酸缓冲液(pH 4.5) 腹腔注射。对STZ静脉注射和腹腔注射的反应是相同的。</p>
+    <p>直接看例子！</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 先看一维的向量，先创建一个向量，再指定分组变量；</span><span class="w">
+</span><span class="n">v</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span><span class="w">
+</span><span class="n">group</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'a'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">,</span><span class="s1">'b'</span><span class="p">)</span><span class="w">
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="n">group</span><span class="p">)</span><span class="w">
+</span><span class="c1"># [1] 1 1 1 2 2</span><span class="w">
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="n">ind</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="c1"># a b </span><span class="w">
+</span><span class="c1"># 6 9 </span><span class="w">
+
+</span><span class="c1"># 同样的道理，对于二维数组或矩阵：</span><span class="w">
+</span><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">group</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">5</span><span class="p">)),</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">group</span><span class="w">
+</span><span class="c1">#     [,1] [,2] [,3] [,4] [,5]</span><span class="w">
+</span><span class="c1"># [1,]    1    1    1    2    2</span><span class="w">
+</span><span class="c1"># [2,]    1    1    2    2    2</span><span class="w">
+
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">ind</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">)</span><span class="w">
+</span><span class="c1"># 1 2 </span><span class="w">
+</span><span class="c1"># 3 8 </span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="数据框中的tapply之by">数据框中的tapply之by</h3>
+
+<ul>
+  <li>
+    <p>语法：<code class="language-plaintext highlighter-rouge">by(dataframe, INDICES, FUN, ..., simplify=TRUE)</code></p>
   </li>
   <li>
-    <p>把老鼠放回笼子。提供标准鼠粮和10%的蔗糖水，自由取食。</p>
+    <p><code class="language-plaintext highlighter-rouge">by</code>可以当成dataframe上的<code class="language-plaintext highlighter-rouge">tapply</code>。<code class="language-plaintext highlighter-rouge">indices</code>应当和dataframe每列的长度相同。返回值是<code class="language-plaintext highlighter-rouge">by</code>类型的object。若simplify=FALSE，本质上是个list;</p>
   </li>
   <li>
-    <p>接下来连续的4天，重复步骤3到7。</p>
+    <p>直接看例子：</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">6</span><span class="o">:</span><span class="m">10</span><span class="p">))</span><span class="w">
+</span><span class="n">group</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">res</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">by</span><span class="p">(</span><span class="n">df</span><span class="p">,</span><span class="w"> </span><span class="n">group</span><span class="p">,</span><span class="w"> </span><span class="n">colMeans</span><span class="p">)</span><span class="w">
+</span><span class="n">res</span><span class="w">
+</span><span class="c1"># group: 1</span><span class="w">
+</span><span class="c1"># a b </span><span class="w">
+</span><span class="c1"># 2 7 </span><span class="w">
+</span><span class="c1"># ------------------------------------------------------------ </span><span class="w">
+</span><span class="c1"># group: 2</span><span class="w">
+</span><span class="c1">#  a   b </span><span class="w">
+</span><span class="c1"># 4.5 9.5 </span><span class="w">
+
+</span><span class="nf">class</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="w">
+</span><span class="c1"># [1] "by"</span><span class="w">
+</span><span class="nf">names</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="w">
+</span><span class="c1"># [1] "1" "2"</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="列表遍历之lapply">列表遍历之lapply</h3>
+
+<ul>
+  <li>
+    <p>语法：<code class="language-plaintext highlighter-rouge">lapply(list, FUN, ...)</code></p>
   </li>
   <li>
-    <p>试验第6天，用普通水代替10%蔗糖水。</p>
+    <p>在<code class="language-plaintext highlighter-rouge">list</code>上逐个元素调用<code class="language-plaintext highlighter-rouge">FUN</code>。也可以用于dataframe上，因为dataframe是一种特殊形式的list，但是不建议使用；</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 需要注意的是lapply返回的数据也是一个list；</span><span class="w">
+</span><span class="n">lst</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">6</span><span class="o">:</span><span class="m">10</span><span class="p">))</span><span class="w">
+</span><span class="n">lapply</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">)</span><span class="w">
+</span><span class="c1"># $a</span><span class="w">
+</span><span class="c1"># [1] 3</span><span class="w">
+
+</span><span class="c1"># $b</span><span class="w">
+</span><span class="c1"># [1] 8</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">as.data.frame</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># 拓展：</span><span class="w">
+</span><span class="n">RowNames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="s2">"pre"</span><span class="p">,</span><span class="nb">LETTERS</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"_"</span><span class="p">)</span><span class="w">
+</span><span class="n">RowNames</span><span class="w">
+ </span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="s2">"pre_A"</span><span class="w"> </span><span class="s2">"pre_B"</span><span class="w"> </span><span class="s2">"pre_C"</span><span class="w"> </span><span class="s2">"pre_D"</span><span class="w"> </span><span class="s2">"pre_E"</span><span class="w"> </span><span class="s2">"pre_F"</span><span class="w"> </span><span class="s2">"pre_G"</span><span class="w"> </span><span class="s2">"pre_H"</span><span class="w"> </span><span class="s2">"pre_I"</span><span class="w">
+</span><span class="p">[</span><span class="m">10</span><span class="p">]</span><span class="w"> </span><span class="s2">"pre_J"</span><span class="w"> </span><span class="s2">"pre_K"</span><span class="w"> </span><span class="s2">"pre_L"</span><span class="w"> </span><span class="s2">"pre_M"</span><span class="w"> </span><span class="s2">"pre_N"</span><span class="w"> </span><span class="s2">"pre_O"</span><span class="w"> </span><span class="s2">"pre_P"</span><span class="w"> </span><span class="s2">"pre_Q"</span><span class="w"> </span><span class="s2">"pre_R"</span><span class="w">
+</span><span class="p">[</span><span class="m">19</span><span class="p">]</span><span class="w"> </span><span class="s2">"pre_S"</span><span class="w"> </span><span class="s2">"pre_T"</span><span class="w"> </span><span class="s2">"pre_U"</span><span class="w"> </span><span class="s2">"pre_V"</span><span class="w"> </span><span class="s2">"pre_W"</span><span class="w"> </span><span class="s2">"pre_X"</span><span class="w"> </span><span class="s2">"pre_Y"</span><span class="w"> </span><span class="s2">"pre_Z"</span><span class="w">
+
+</span><span class="c1"># 我想把A-Z再取出来怎么办呢？尝试自己动手写！</span><span class="w">
+</span><span class="n">unlist</span><span class="p">(</span><span class="n">lapply</span><span class="p">(</span><span class="n">strsplit</span><span class="p">(</span><span class="n">RowNames</span><span class="p">,</span><span class="s2">"_"</span><span class="p">),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="m">2</span><span class="p">]))</span><span class="w">
+</span></code></pre></div></div>
+
+<h4 id="简化版本之sapply">简化版本之sapply</h4>
+
+<ul>
+  <li>
+    <p>语法：<code class="language-plaintext highlighter-rouge">sapply(list, FUN, ..., simplify, USE.NAME=TRUE)</code></p>
   </li>
   <li>
+    <p>比<code class="language-plaintext highlighter-rouge">lapply</code>多了一个<code class="language-plaintext highlighter-rouge">simplify</code>参数。如果<code class="language-plaintext highlighter-rouge">simplify=FALSE</code>，则等价于<code class="language-plaintext highlighter-rouge">lapply</code>。否则，在上一种情况的基础上，将<code class="language-plaintext highlighter-rouge">lapply</code>输出的list简化为vector或matrix</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p>也就是他帮我们省事了，我们不需要再多一步unlist的过程了！</p>
+</blockquote>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">######### sapply ############</span><span class="w">
+</span><span class="c1"># sapply如果设定simplify参数为True，则返回向量或矩阵；</span><span class="w">
+</span><span class="n">lst</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="n">b</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="m">6</span><span class="o">:</span><span class="m">10</span><span class="p">))</span><span class="w">
+</span><span class="n">sapply</span><span class="p">(</span><span class="n">lst</span><span class="p">,</span><span class="w"> </span><span class="n">mean</span><span class="p">,</span><span class="n">simplify</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">T</span><span class="p">)</span><span class="w">  </span><span class="c1"># 返回矩阵</span><span class="w">
+
+</span><span class="c1"># 拓展：</span><span class="w">
+</span><span class="n">RowNames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">paste</span><span class="p">(</span><span class="s2">"pre"</span><span class="p">,</span><span class="nb">LETTERS</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"_"</span><span class="p">)</span><span class="w">
+</span><span class="c1"># 尝试自己动手写！</span><span class="w">
+</span><span class="n">sapply</span><span class="p">(</span><span class="n">strsplit</span><span class="p">(</span><span class="n">RowNames</span><span class="p">,</span><span class="s2">"_"</span><span class="p">),</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="p">[</span><span class="m">2</span><span class="p">])</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="多个参数之mapply">多个参数之mapply</h3>
+
+<ul>
+  <li>
+    <p>语法：<code class="language-plaintext highlighter-rouge">mapply(FUN, ..., MoreArgs=NULL, SIMPLIFY=TRUE, USE.NAMES=TRUE)</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">mapply</code>是多变量版的<code class="language-plaintext highlighter-rouge">sapply</code>，参数(…)部分可以接收多个数据，要求多个数据的长度相同，或者是整数倍关系。返回值是vector或matrix，取决于<code class="language-plaintext highlighter-rouge">FUN</code>返回值是一个还是多个。</p>
+  </li>
+  <li>
+    <p>直接看例子：</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 两个list作为输入：</span><span class="w">
+</span><span class="n">mapply</span><span class="p">(</span><span class="n">sum</span><span class="p">,</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="m">1</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="m">2</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">a</span><span class="o">=</span><span class="m">10</span><span class="p">,</span><span class="n">b</span><span class="o">=</span><span class="m">20</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="m">30</span><span class="p">))</span><span class="w">
+</span><span class="c1"># a  b  c </span><span class="w">
+</span><span class="c1"># 11 22 33 </span><span class="w">
+
+</span><span class="c1"># 两个向量作为输入，返回向量：</span><span class="w">
+</span><span class="n">mapply</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="n">x</span><span class="o">^</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">))</span><span class="w">
+</span><span class="c1"># [1]    1    4   27  256 3125</span><span class="w">
+
+</span><span class="c1"># 返回矩阵：</span><span class="w">
+</span><span class="n">mapply</span><span class="p">(</span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">x</span><span class="o">+</span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="o">^</span><span class="n">y</span><span class="p">),</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">),</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">))</span><span class="w">
+</span><span class="c1">#      [,1] [,2] [,3] [,4] [,5]</span><span class="w">
+</span><span class="c1"># [1,]    2    4    6    8   10</span><span class="w">
+</span><span class="c1"># [2,]    1    4   27  256 3125</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="应用使用tapply实现长数据转宽数据">应用：使用tapply实现长数据转宽数据</h3>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 定义一个数据框：</span><span class="w">
+</span><span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">year</span><span class="o">=</span><span class="n">kronecker</span><span class="p">(</span><span class="m">2001</span><span class="o">:</span><span class="m">2003</span><span class="p">,</span><span class="w"> </span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">4</span><span class="p">)),</span><span class="w"> </span><span class="n">loc</span><span class="o">=</span><span class="nf">c</span><span class="p">(</span><span class="s1">'beijing'</span><span class="p">,</span><span class="s1">'beijing'</span><span class="p">,</span><span class="s1">'shanghai'</span><span class="p">,</span><span class="s1">'shanghai'</span><span class="p">),</span><span class="w"> </span><span class="n">type</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s1">'A'</span><span class="p">,</span><span class="s1">'B'</span><span class="p">),</span><span class="m">6</span><span class="p">),</span><span class="w"> </span><span class="n">sale</span><span class="o">=</span><span class="nf">rep</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">12</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># 查看内容</span><span class="w">
+</span><span class="o">&gt;</span><span class="w"> </span><span class="n">df</span><span class="w">
+</span><span class="c1"># year      loc type sale</span><span class="w">
+</span><span class="c1"># 1  2001  beijing    A    1</span><span class="w">
+</span><span class="c1"># 2  2001  beijing    B    2</span><span class="w">
+</span><span class="c1"># 3  2001 shanghai    A    3</span><span class="w">
+</span><span class="c1"># 4  2001 shanghai    B    4</span><span class="w">
+</span><span class="c1"># 5  2002  beijing    A    5</span><span class="w">
+</span><span class="c1"># 6  2002  beijing    B    6</span><span class="w">
+</span><span class="c1"># 7  2002 shanghai    A    7</span><span class="w">
+</span><span class="c1"># 8  2002 shanghai    B    8</span><span class="w">
+</span><span class="c1"># 9  2003  beijing    A    9</span><span class="w">
+</span><span class="c1"># 10 2003  beijing    B   10</span><span class="w">
+</span><span class="c1"># 11 2003 shanghai    A   11</span><span class="w">
+</span><span class="c1"># 12 2003 shanghai    B   12</span><span class="w">
+
+</span><span class="c1"># tapply又叫在干啥？对啦！分组运算呗！</span><span class="w">
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">sale</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="o">$</span><span class="n">year</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># 指定两个分组变量呢？</span><span class="w">
+</span><span class="c1"># 先按year分，内部再按loc分！</span><span class="w">
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">sale</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s1">'year'</span><span class="p">,</span><span class="s1">'loc'</span><span class="p">)],</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="c1">#      loc</span><span class="w">
+</span><span class="c1"># year   beijing shanghai</span><span class="w">
+</span><span class="c1">#  2001       3        7</span><span class="w">
+</span><span class="c1">#  2002      11       15</span><span class="w">
+</span><span class="c1">#  2003      19       23</span><span class="w">
+</span><span class="n">tapply</span><span class="p">(</span><span class="n">df</span><span class="o">$</span><span class="n">sale</span><span class="p">,</span><span class="w"> </span><span class="n">df</span><span class="p">[,</span><span class="nf">c</span><span class="p">(</span><span class="s1">'year'</span><span class="p">,</span><span class="s1">'type'</span><span class="p">)],</span><span class="w"> </span><span class="n">sum</span><span class="p">)</span><span class="w">
+</span><span class="c1">#      type</span><span class="w">
+</span><span class="c1"># year    A  B</span><span class="w">
+</span><span class="c1">#  2001  4  6</span><span class="w">
+</span><span class="c1">#  2002 12 14</span><span class="w">
+</span><span class="c1">#  2003 20 22</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[apply系列函数]]></summary></entry><entry><title type="html">16. while循环</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-16.-while%E5%BE%AA%E7%8E%AF.html" rel="alternate" type="text/html" title="16. while循环" /><published>2022-09-20T21:16:32+08:00</published><updated>2022-09-20T21:16:32+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-16.%20while%E5%BE%AA%E7%8E%AF</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-16.-while%E5%BE%AA%E7%8E%AF.html"><![CDATA[<h1 id="part1while循环">Part1<strong>while循环：</strong></h1>
+
+<ul>
+  <li>只要给定的条件为 true，R 语言中的 while 循环语句会重复执行一个目标语句。</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 语法格式如下：</span><span class="w">
+</span><span class="k">while</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w">
+</span><span class="p">{</span><span class="w">
+   </span><span class="n">statement</span><span class="p">(</span><span class="n">s</span><span class="p">);</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p>在这里，statement(s) 可以是一个单独的语句，也可以是几个语句组成的代码块。</p>
+  </li>
+  <li>
+    <p>condition 可以是任意的表达式，当为任意非零值时都为 true。当条件为 true 时执行循环。当条件为 false 时，退出循环，程序流将继续执行紧接着循环的下一条语句。</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">######################################################</span><span class="w">
+</span><span class="c1"># while循环：</span><span class="w">
+</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="o">&lt;</span><span class="m">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s2">"第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"次打印:生信师兄！"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">))</span><span class="w">
+  </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="m">+1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1"># 在for循环中，循环控制变量的初始化和修改都放在语句头部分，</span><span class="w">
+</span><span class="c1"># 形式较简洁，且特别适用于循环次数已知的情况。</span><span class="w">
+</span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s2">"第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"次打印:生信师兄！"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">))</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+
+</span><span class="c1">######################################################</span><span class="w">
+</span><span class="c1"># 在while循环中，循环控制变量的初始化一般放在while语句之前，</span><span class="w">
+</span><span class="c1"># 循环控制变量的修改一般放在循环体中，形式上不如for语句简洁，</span><span class="w">
+</span><span class="c1"># 但它比较适用于循环次数不易预知的情况（用某一条件控制循环）。</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="m">50</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s2">"a的第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"个元素为："</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">"; 它小于50"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">))</span><span class="w">
+  </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="m">+1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+
+</span><span class="c1">#######################################################</span><span class="w">
+</span><span class="c1"># 多个判断条件：</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">99</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="m">50</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="m">60</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s2">"a的第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"个元素为："</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">"; 它小于50"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">))</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">paste</span><span class="p">(</span><span class="s2">"b的第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"个元素为："</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">"; 它小于60"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">""</span><span class="p">))</span><span class="w">
+  </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="m">+1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span><span class="c1"># 使用cat输出：</span><span class="w">
+</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">100</span><span class="p">,</span><span class="m">2</span><span class="p">)</span><span class="w">
+</span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">seq</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">99</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">1</span><span class="w">
+</span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="m">50</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">&lt;</span><span class="m">60</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"a的第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"个元素为:"</span><span class="p">,</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">"; 它小于50"</span><span class="p">,</span><span class="s2">"\t"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"b的第"</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">"个元素为:"</span><span class="p">,</span><span class="w"> </span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s2">"; 它小于60"</span><span class="p">,</span><span class="s2">"\n"</span><span class="p">)</span><span class="w">
+  </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="m">+1</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>在<strong>for循环</strong>中，循环控制变量的初始化和修改都放在语句头部分，形式较简洁，且特别<strong>适用于循环次数已知的情况。</strong></p>
+
+  <p>在<strong>while循环</strong>中，循环控制变量的初始化一般放在while语句之前，循环控制变量的修改一般放在循环体中，形式上不如for语句简洁，但它比较<strong>适用于循环次数不易预知的情况（用某一条件控制循环）。</strong></p>
+
+  <p>两种形式各有优点，但它们在功能上是等价的，可以<strong>相互转换。</strong></p>
+</blockquote>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[Part1while循环：]]></summary></entry><entry><title type="html">15. for循环</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-15.-for%E5%BE%AA%E7%8E%AF.html" rel="alternate" type="text/html" title="15. for循环" /><published>2022-09-20T21:16:31+08:00</published><updated>2022-09-20T21:16:31+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-15.%20for%E5%BE%AA%E7%8E%AF</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-15.-for%E5%BE%AA%E7%8E%AF.html"><![CDATA[<h1 id="part1循环语句">Part1循环语句：</h1>
+
+<h2 id="1for循环基础">1for循环基础：</h2>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 5. 高级数据管理——条件和循环</span><span class="w">
+  </span><span class="c1"># 5.1 for循环：</span><span class="w">
+
+  </span><span class="c1"># 一个最简单的例子：让R打印10次“生信师兄”</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">print</span><span class="p">(</span><span class="s2">"生信师兄"</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+
+  </span><span class="c1"># 考察一下大家对于前面数据类型的掌握程度：</span><span class="w">
+  </span><span class="c1"># 你能否使用for循环，实现一个向量中所有元素的加和呢？如果是矩阵呢？</span><span class="w">
+  </span><span class="n">vec</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">runif</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="n">min</span><span class="o">=</span><span class="m">0</span><span class="p">,</span><span class="n">max</span><span class="o">=</span><span class="m">1</span><span class="p">)</span><span class="w">  </span><span class="c1"># 你也可以自己指定一个向量，或者使用rep，seq等函数均可；</span><span class="w">
+  </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="w">
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">vec</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">vec</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="2for循环打印九九乘法表">2for循环打印九九乘法表</h2>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 如何用for循环打印99乘法表？</span><span class="w">
+  </span><span class="c1"># cat函数的使用：</span><span class="w">
+  </span><span class="n">cat</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="s2">"b"</span><span class="p">,</span><span class="s2">"c"</span><span class="p">)</span><span class="w">
+
+
+  </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="n">cat</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span><span class="s2">"*"</span><span class="p">,</span><span class="s2">"b"</span><span class="p">,</span><span class="s2">"="</span><span class="p">,</span><span class="s2">"c   "</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+
+  </span><span class="c1">#############################</span><span class="w">
+  </span><span class="k">for</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">9</span><span class="p">){</span><span class="w">
+    </span><span class="k">for</span><span class="p">(</span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="n">i</span><span class="p">){</span><span class="w">
+      </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="o">*</span><span class="n">i</span><span class="w">
+      </span><span class="n">cat</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="s1">'*'</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="s1">'='</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="s1">' '</span><span class="p">)</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+    </span><span class="n">cat</span><span class="p">(</span><span class="s1">'\n'</span><span class="p">)</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[Part1循环语句：]]></summary></entry><entry><title type="html">14. 导入和导出</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-14.-%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA.html" rel="alternate" type="text/html" title="14. 导入和导出" /><published>2022-09-20T21:16:30+08:00</published><updated>2022-09-20T21:16:30+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-14.%20%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-14.-%E5%AF%BC%E5%85%A5%E5%92%8C%E5%AF%BC%E5%87%BA.html"><![CDATA[<h1 id="part3基本数据管理">Part3基本数据管理</h1>
+
+<ul>
+  <li>
+    <p><strong>导入csv文件</strong>：</p>
+  </li>
+  <li>
+    <p>csv（Comma-Separated Values，CSV） 是一种非常流行的表格存储文件格式，这种格式适合储存中型或小型数据规模的数据。</p>
+
+    <p>csv 用<strong>逗号</strong>来分割列，如果数据中含有逗号，就要用双引号将整个数据块包括起来。</p>
+
+    <p>例如:</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">id</span><span class="p">,</span><span class="n">name</span><span class="p">,</span><span class="n">url</span><span class="p">,</span><span class="n">likes</span><span class="w">
+</span><span class="m">1</span><span class="p">,</span><span class="n">Google</span><span class="p">,</span><span class="n">www.google.com</span><span class="p">,</span><span class="m">111</span><span class="w">
+</span><span class="m">2</span><span class="p">,</span><span class="n">Runoob</span><span class="p">,</span><span class="n">www.runoob.com</span><span class="p">,</span><span class="m">222</span><span class="w">
+</span><span class="m">3</span><span class="p">,</span><span class="n">Taobao</span><span class="p">,</span><span class="n">www.taobao.com</span><span class="p">,</span><span class="m">333</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>读取csv文件：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"sites.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">encoding</span><span class="o">=</span><span class="s2">"UTF-8"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>注意：</strong>如果不设置 encoding 属性，read.csv 函数将默认以操作系统默认的文字编码进行读取，如果你使用的是 Windows 中文版系统且没有设置过系统的默认编码，那系统的默认编码应该是 GBK。所以大家请尽可能地统一文字编码以防出错。</p>
+
+<ul>
+  <li>read.csv() 函数返回的是数据框，我们可以很方便的对数据进行统计处理，以下实例我们查看行数和列数：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">is.data.frame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w">  </span><span class="c1"># 查看是否是数据框</span><span class="w">
+</span><span class="n">ncol</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w">  </span><span class="c1"># 列数</span><span class="w">
+</span><span class="n">nrow</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="w">  </span><span class="c1"># 行数</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>保存为csv文件：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># likes 为 222 的数据</span><span class="w">
+</span><span class="n">retval</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">subset</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="n">likes</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">222</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># 写入新的文件</span><span class="w">
+</span><span class="n">write.csv</span><span class="p">(</span><span class="n">retval</span><span class="p">,</span><span class="s2">"runoob.csv"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span><span class="n">newdata</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.csv</span><span class="p">(</span><span class="s2">"runoob.csv"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>导入Excel文件</strong>：</p>
+
+    <ul>
+      <li>Excel 格式的文件主要是 xls 或 xlsx，这两种文件可以在 R 语言中导入 xlsx 库来实现直接的读取。</li>
+    </ul>
+
+    <p>R 语言读写 Excel 文件需要安装扩展包，我们可以在 R 到控制台输入以下命令来安装：</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">install.packages</span><span class="p">(</span><span class="s2">"xlsx"</span><span class="p">)</span><span class="w">
+</span><span class="n">library</span><span class="p">(</span><span class="s2">"xlsx"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>使用 read.xlsx() 函数来读取 Excel 数据：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 读取 sites.xlsx 第一个工作表数据</span><span class="w">
+</span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.xlsx</span><span class="p">(</span><span class="s2">"sites.xlsx"</span><span class="p">,</span><span class="w"> </span><span class="n">sheetIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">)</span><span class="w">
+
+</span><span class="n">write.xls</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="s2">"sites.xls"</span><span class="p">,</span><span class="w">
+         </span><span class="n">sheetName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"生信师兄"</span><span class="p">,</span><span class="n">append</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>导入txt文件</strong>：</p>
+
     <ul>
       <li>
-        <p>对于早期T1D的研究:在实验第14天(最后一次STZ注射后9天)，将所有小鼠禁食6小时(例如，从7:00-13:00)。使用血糖监测分析尾静脉血液样本中的血糖系统，以确保在STZ处理的小鼠高血糖。如果STZ注射的小鼠在实验第28天之前满足这些条件，步骤10b可以省略。如果STZ注射组的小鼠在第14天达到糖尿病状态的小于40%，重新测试血糖浓度。</p>
+        <p>参数解释:</p>
       </li>
       <li>
-        <p>由于血糖浓度被认为是糖尿病的准确诊断工具，一般不需要测量血液中的胰岛素浓度。对于糖尿病第一次试验失败的动物的重新试验和涉及晚期T1DM的研究:在实验第28天，将所有小鼠禁食6小时(例如，从7:00到13:00)。使用血糖监测系统量化尾静脉血液样本中的血糖，以确认STZ注射引起的高血糖。</p>
-
-        <p>与对照组小鼠相比，STZ注射小鼠的空腹血糖浓度应为&gt;150 mg/dl (8.3 mmol/L)和/或显著升高。</p>
-
-        <p>STZ注射3周后，50%的小鼠出现严重糖尿病，血糖浓度通常在&gt;300至600
-mg/dl(16.7至33.3 mmol/L)范围内。</p>
-
-        <p>如果STZ注射小鼠&gt;60%到第4周仍未出现轻度高血糖，应在第7周开始第二轮STZ注射，重复步骤3 ~ 8，加步骤10a。第二轮STZ无需向动物提供10%蔗糖水，致死性低血糖的发生率远低于第一次接触。</p>
+        <p>header：传入一个逻辑值，True/False，表示是否将第一行作为列名；</p>
+      </li>
+      <li>
+        <p>sep ：参数sep允许你导入那些使用逗号以外的符号来分隔行内数据的文件。你可以使用 sep=”\t”读取以制表符分隔的文件，此参数的默认值为sep=”“，即表示分隔符可为一个或多个空格、制表符、换行符或回车符。</p>
+      </li>
+      <li>
+        <p>row.names：用于指定行名，可以用数字，表示第几列作为行名，也可以直接用列名；</p>
+      </li>
+      <li>
+        <p>stringsAsFactors：默认情况下，字符型变量将转换为因子。我们并不总是希望程序这样做（例如处理一个含有被调查者评论的变量时） 。</p>
+      </li>
+      <li>
+        <p>使用read.table()从带分隔符的文本文件中导入数据。此函数可读入一个表格格式 的文件并将其保存为一个数据框。其语法如下：</p>
       </li>
     </ul>
   </li>
-</ol>
+</ul>
 
-<p>血糖浓度为18mg /dl = 1mM。</p>
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">read.table</span><span class="p">(</span><span class="n">file</span><span class="p">,</span><span class="w"> </span><span class="n">header</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"逻辑值"</span><span class="p">,</span><span class="n">sep</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"\t"</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="n">stringsAsFactors</span><span class="o">=</span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
 
-<ol>
+<ul>
+  <li>例子：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">read.table</span><span class="p">(</span><span class="s2">"sites.csv"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">write.table</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">file</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"sites.txt"</span><span class="p">)</span><span class="w">
+
+</span><span class="n">read.table</span><span class="p">(</span><span class="s2">"sites.txt"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[Part3基本数据管理]]></summary></entry><entry><title type="html">13. 列表</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-13.-%E5%88%97%E8%A1%A8.html" rel="alternate" type="text/html" title="13. 列表" /><published>2022-09-20T21:16:29+08:00</published><updated>2022-09-20T21:16:29+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-13.%20%E5%88%97%E8%A1%A8</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-13.-%E5%88%97%E8%A1%A8.html"><![CDATA[<ul>
   <li>
-    <p>检查一种试验药物是否有能力纠正糖尿病或影响高血糖:一旦糖尿病状态确定如第10步所述，就开始用试验降糖药进行治疗，包括设置接受溶剂注射作为对照组。</p>
+    <p><strong>列表：</strong></p>
 
-    <p>研究慢性疾病或糖尿病并发症:在第7周重复步骤3到8，省略10%蔗糖水，以维持STZ处理的高血糖。
-如果糖尿病动物用于研究T1DM的早期机制或筛查早期治疗糖尿病的化合物，则当STZ注射小鼠的血糖浓度为&gt;150 mg/dl (8.3 mmol/L)且/或高于对照组小鼠时，认为该动物适合研究。</p>
+    <p>列表是 R 语言的对象集合，可以用来保存不同类型的数据，可以是数字、字符串、向量、矩阵、另一个列表等，还可以包含函数。</p>
+
+    <ul>
+      <li>R 语言创建列表使用 <strong>list()</strong> 函数。</li>
+    </ul>
   </li>
-</ol>]]></content><author><name></name></author><category term="Protocols" /><summary type="html"><![CDATA[Briefly, 10-week-old male mice (C57BL/6) were fasted for 16 h and received intraperitoneal injection of streptozotocin (Sigma, S0130; 50 mg kg ^–1^ in 0.1 M citrate buffer, pH 4) daily for 5 d. Two weeks after injection, fasted mice with hyperglycemia over 16.6 mmol liter –1 glucose were considered diabetic and used for further experiments.]]></summary></entry></feed>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">list_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="s2">"runoob"</span><span class="p">,</span><span class="w"> </span><span class="s2">"google"</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">11</span><span class="p">,</span><span class="m">22</span><span class="p">,</span><span class="m">33</span><span class="p">),</span><span class="w"> </span><span class="m">123</span><span class="p">,</span><span class="w"> </span><span class="m">51.23</span><span class="p">,</span><span class="w"> </span><span class="m">119.1</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>我们可以使用 <strong>names()</strong> 函数给列表的元素命名：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 列表包含向量、矩阵、列表</span><span class="w">
+  </span><span class="n">list_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"Google"</span><span class="p">,</span><span class="s2">"Runoob"</span><span class="p">,</span><span class="s2">"Taobao"</span><span class="p">),</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">5</span><span class="p">,</span><span class="m">6</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w">
+  </span><span class="nf">list</span><span class="p">(</span><span class="s2">"runoob"</span><span class="p">,</span><span class="m">12.3</span><span class="p">))</span><span class="w">
+
+  </span><span class="c1"># 给列表元素设置名字</span><span class="w">
+  </span><span class="nf">names</span><span class="p">(</span><span class="n">list_data</span><span class="p">)</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Sites"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Numbers"</span><span class="p">,</span><span class="w"> </span><span class="s2">"Lists"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>访问列表：列表中的元素可以使用索引来访问，如果使用来 <strong>names()</strong> 函数命名后，我们还可以使用对应名字来访问：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 访问列表的第三个元素</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">3</span><span class="p">]</span><span class="w">
+
+  </span><span class="c1"># 访问第一个向量元素</span><span class="w">
+  </span><span class="n">list_data</span><span class="o">$</span><span class="n">Numbers</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>操作列表元素</li>
+</ul>
+
+<p>我们可以对列表进行添加、删除、更新的操作，如下实例：</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 添加元素</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">4</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"新元素"</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">4</span><span class="p">]</span><span class="w">
+
+  </span><span class="c1"># 删除元素</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">4</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="kc">NULL</span><span class="w">
+
+  </span><span class="c1"># 删除后输出为 NULL</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">4</span><span class="p">]</span><span class="w">
+
+  </span><span class="c1"># 更新元素</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">3</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s2">"我来替换第三个元素"</span><span class="w">
+  </span><span class="n">list_data</span><span class="p">[</span><span class="m">3</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>合并列表：我们可以使用 <strong>c()</strong> 函数将多个列表合并为一个列表：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="c1"># 创建两个列表</span><span class="w">
+  </span><span class="n">list1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+  </span><span class="n">list2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="s2">"Google"</span><span class="p">,</span><span class="s2">"Runoob"</span><span class="p">,</span><span class="s2">"Taobao"</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 合并列表</span><span class="w">
+  </span><span class="n">merged.list</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span><span class="n">list2</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>列表转换为向量：要将列表转换为向量可以使用 <strong>unlist()</strong> 函数，将列表转换为向量，可以方便我们进行算术运算：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 创建列表</span><span class="w">
+  </span><span class="n">list1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span><span class="w">
+
+  </span><span class="n">list2</span><span class="w"> </span><span class="o">&lt;-</span><span class="nf">list</span><span class="p">(</span><span class="m">10</span><span class="o">:</span><span class="m">14</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 转换为向量</span><span class="w">
+  </span><span class="n">v1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">list1</span><span class="p">)</span><span class="w">
+  </span><span class="n">v2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">unlist</span><span class="p">(</span><span class="n">list2</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 两个向量相加</span><span class="w">
+  </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">v1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">v2</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>深入探究一波：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 对于列表来说：[]和[[]]有啥区别？</span><span class="w">
+  </span><span class="n">list1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">list2</span><span class="w">
+
+  </span><span class="n">list1</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">list2</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+
+  </span><span class="n">list1</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">list2</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="w">
+  </span><span class="c1"># 同样的当 x 的数据类型是 list 时，[]操作将返回一个 list 数据类型，</span><span class="w">
+  </span><span class="c1"># 且将是 x 的一个子集。如果使用 [[]] 操作，将返回 list 中的一个数据，</span><span class="w">
+  </span><span class="c1"># 该数据类型由本身确定，和 list 无关。对于 data.frame 数据也是如此。</span><span class="w">
+  </span><span class="n">table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="w">
+    </span><span class="s1">'姓名'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"张三"</span><span class="p">,</span><span class="w"> </span><span class="s2">"李四"</span><span class="p">),</span><span class="w">
+    </span><span class="s1">'工号'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"001"</span><span class="p">,</span><span class="s2">"002"</span><span class="p">),</span><span class="w">
+    </span><span class="s1">'月薪'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">2000</span><span class="p">)</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+  </span><span class="n">table</span><span class="p">[</span><span class="m">1</span><span class="p">]</span><span class="w">
+  </span><span class="n">table</span><span class="p">[[</span><span class="m">1</span><span class="p">]]</span><span class="w">
+  </span><span class="n">table</span><span class="p">[,</span><span class="m">1</span><span class="p">]</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[列表： 列表是 R 语言的对象集合，可以用来保存不同类型的数据，可以是数字、字符串、向量、矩阵、另一个列表等，还可以包含函数。 R 语言创建列表使用 list() 函数。]]></summary></entry><entry><title type="html">12. 因子</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-12.-%E5%9B%A0%E5%AD%90.html" rel="alternate" type="text/html" title="12. 因子" /><published>2022-09-20T21:16:28+08:00</published><updated>2022-09-20T21:16:28+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-12.%20%E5%9B%A0%E5%AD%90</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-12.-%E5%9B%A0%E5%AD%90.html"><![CDATA[<p><strong>因子</strong>：</p>
+
+<ul>
+  <li>
+    <p>变量可归结为<strong>名义型、有序型或连续型变量</strong>。<strong>名义型变量</strong>是没有顺序之分的类别变量。<strong>有序型变量</strong>表示一种顺序关系,而非数量关系。</p>
+
+    <p><strong>类别(名义型)变量</strong>和<strong>有序类别(有序型)变量</strong>在R中称为<strong>因子(factor)</strong>。</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">character</span><span class="p">(),</span><span class="w"> </span><span class="n">levels</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">levels</span><span class="p">,</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">is.ordered</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p>参数说明：</p>
+
+    <ul>
+      <li>
+        <p><strong>x</strong>：向量</p>
+      </li>
+      <li>
+        <p><strong>levels</strong>：指定各水平值, 不指定时由x的不同值来求得。</p>
+      </li>
+      <li>
+        <p><strong>labels</strong>：水平的标签, 不指定时用各水平值的对应字符串。</p>
+      </li>
+      <li>
+        <p><strong>ordered</strong>：逻辑值，用于指定水平是否有序。</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 例子</span><span class="w">
+</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w">  </span><span class="s2">"M"</span><span class="p">)</span><span class="w">
+</span><span class="n">sex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># levels参数</span><span class="w">
+</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w">  </span><span class="s2">"M"</span><span class="p">)</span><span class="w">
+</span><span class="n">sex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="s2">"F"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>因子水平标签</li>
+</ul>
+
+<p>接下来我们使用 labels 参数为每个因子水平添加标签，labels 参数的字符顺序，要和 levels 参数的字符顺序保持一致，例如：</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># lables参数</span><span class="w">
+</span><span class="n">x</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w">  </span><span class="s2">"M"</span><span class="p">)</span><span class="w">
+</span><span class="n">sex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="s2">"F"</span><span class="p">),</span><span class="n">lables</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"女"</span><span class="p">,</span><span class="s2">"男"</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># as.factors()函数：</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>生成因子水平：我们可以使用 <strong>gl()</strong> 函数来生成因子水平，语法格式如下：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">gl</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">n</span><span class="o">*</span><span class="n">k</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">seq_len</span><span class="p">(</span><span class="n">n</span><span class="p">),</span><span class="w"> </span><span class="n">ordered</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p>参数说明：</p>
+
+    <ul>
+      <li>
+        <p><strong>n</strong>: 设置 level 的个数</p>
+      </li>
+      <li>
+        <p><strong>k</strong>: 设置每个 level 重复的次数</p>
+      </li>
+      <li>
+        <p><strong>length</strong>: 设置长度</p>
+      </li>
+      <li>
+        <p><strong>labels</strong>: 设置 level 的值</p>
+      </li>
+      <li>
+        <p><strong>ordered</strong>: 设置是否 level 是排列好顺序的，布尔值。</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sex</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">gl</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">labels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"M"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p>因子有啥用啊？</p>
+
+    <ul>
+      <li>讲解因子变量(factor)的特性很多情况下需要与字符型变量(character)相对比进行介绍,因为这两者实在是太像了,但实际上却有着诸多不同之处</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 字符型排序的基本规则是先按照数字进行排序,继而根据英文字母顺序主义排序,因此上例中,第一个元素为4,第二个元素为5a,字符型变量的局限性在于其对元素的排序规则是内定的,无法改变的;</span><span class="w">
+</span><span class="n">sizes</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"large"</span><span class="p">,</span><span class="w"> </span><span class="s2">"very_large"</span><span class="p">,</span><span class="w"> </span><span class="s2">"small"</span><span class="p">,</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">)</span><span class="w">
+</span><span class="n">sort</span><span class="p">(</span><span class="n">sizes</span><span class="p">)</span><span class="w">
+
+</span><span class="n">sizes_fac</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">factor</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="s2">"large"</span><span class="p">,</span><span class="w"> </span><span class="s2">"very_large"</span><span class="p">,</span><span class="w"> </span><span class="s2">"small"</span><span class="p">,</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">),</span><span class="w">
+                </span><span class="n">levels</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"small"</span><span class="p">,</span><span class="w"> </span><span class="s2">"medium"</span><span class="p">,</span><span class="w"> </span><span class="s2">"large"</span><span class="p">,</span><span class="w"> </span><span class="s2">"very_large"</span><span class="p">))</span><span class="w">
+</span><span class="n">sort</span><span class="p">(</span><span class="n">sizes_fac</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[因子：]]></summary></entry><entry><title type="html">11. 数组</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-11.-%E6%95%B0%E7%BB%84.html" rel="alternate" type="text/html" title="11. 数组" /><published>2022-09-20T21:16:27+08:00</published><updated>2022-09-20T21:16:27+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-11.%20%E6%95%B0%E7%BB%84</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-11.-%E6%95%B0%E7%BB%84.html"><![CDATA[<p><strong>数组：</strong></p>
+
+<p>数组也是 R 语言的对象，R 语言可以创建一维或多维数组。像矩阵一样,数组中的数据也只能拥有一种模式。</p>
+
+<p>R 语言数组是一个同一类型的集合，前面我们学的矩阵 matrix 其实就是一个二维数组。</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># array() 函数语法格式如下：</span><span class="w">
+  </span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NA</span><span class="p">,</span><span class="w"> </span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>
+    <p><strong>参数说明：</strong></p>
+
+    <ul>
+      <li>
+        <p>data 向量，数组元素。</p>
+      </li>
+      <li>
+        <p>dim 数组的维度，默认是一维数组。</p>
+      </li>
+      <li>
+        <p>dimnames 维度的名称，必须是个列表，默认情况下是不设置名称的。</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>以下实例我们创建一个三维数组</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="n">dim1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"A1"</span><span class="p">,</span><span class="s2">"A2"</span><span class="p">,</span><span class="s2">"A3"</span><span class="p">)</span><span class="w"> 
+  </span><span class="n">dim2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"B1"</span><span class="p">,</span><span class="s2">"B2"</span><span class="p">,</span><span class="s2">"B3"</span><span class="p">)</span><span class="w"> 
+  </span><span class="n">dim3</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">,</span><span class="s2">"C2"</span><span class="p">,</span><span class="s2">"C3"</span><span class="p">)</span><span class="w">
+  </span><span class="n">z</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="m">27</span><span class="p">,</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">dimnames</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="n">dim1</span><span class="p">,</span><span class="w"> </span><span class="n">dim2</span><span class="p">,</span><span class="w"> </span><span class="n">dim3</span><span class="p">))</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>访问数组中的元素：</li>
+</ul>
+
+<p>如果想获取数组元素，可以通过使用元素的列索引和行索引，类似坐标形式。</p>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 创建两个不同长度的向量</span><span class="w">
+  </span><span class="n">vector1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">5</span><span class="p">,</span><span class="m">9</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+  </span><span class="n">vector2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">11</span><span class="p">,</span><span class="m">12</span><span class="p">,</span><span class="m">13</span><span class="p">,</span><span class="m">14</span><span class="p">,</span><span class="m">15</span><span class="p">)</span><span class="w">
+  </span><span class="n">column.names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"COL1"</span><span class="p">,</span><span class="s2">"COL2"</span><span class="p">,</span><span class="s2">"COL3"</span><span class="p">)</span><span class="w">
+  </span><span class="n">row.names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"ROW1"</span><span class="p">,</span><span class="s2">"ROW2"</span><span class="p">,</span><span class="s2">"ROW3"</span><span class="p">)</span><span class="w">
+  </span><span class="n">matrix.names</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Matrix1"</span><span class="p">,</span><span class="s2">"Matrix2"</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 创建数组</span><span class="w">
+  </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">array</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="n">vector1</span><span class="p">,</span><span class="n">vector2</span><span class="p">),</span><span class="n">dim</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">row.names</span><span class="p">,</span><span class="w"> </span><span class="n">column.names</span><span class="p">,</span><span class="w"> </span><span class="n">matrix.names</span><span class="p">))</span><span class="w">
+
+  </span><span class="c1"># 显示数组第二个矩阵中第三行的元素</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="m">3</span><span class="p">,,</span><span class="m">2</span><span class="p">])</span><span class="w">
+
+  </span><span class="c1"># 显示数组第一个矩阵中第一行第三列的元素</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">1</span><span class="p">])</span><span class="w">
+
+  </span><span class="c1"># 输出第二个矩阵</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">result</span><span class="p">[,,</span><span class="m">2</span><span class="p">])</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[数组：]]></summary></entry><entry><title type="html">10. 数据框</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-10.-%E6%95%B0%E6%8D%AE%E6%A1%86.html" rel="alternate" type="text/html" title="10. 数据框" /><published>2022-09-20T21:16:26+08:00</published><updated>2022-09-20T21:16:26+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-10.%20%E6%95%B0%E6%8D%AE%E6%A1%86</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-10.-%E6%95%B0%E6%8D%AE%E6%A1%86.html"><![CDATA[<p><strong>数据框：</strong></p>
+
+<ul>
+  <li>
+    <p>数据框（Data frame）可以理解成我们常说的”表格”，也是 R 语言中的数据结构之一。数据框每一列都有一个唯一的列名，长度都是相等的，<strong>同一列的数据类型需要一致，不同列的数据类型可以不一样。</strong></p>
+  </li>
+  <li>
+    <p>R 语言数据框使用 data.frame() 函数来创建，语法格式如下：</p>
+  </li>
+  <li>
+    <p><strong>…</strong>: 列向量，可以是任何类型（字符型、数值型、逻辑型），一般以 tag = value 的形式表示，也可以是 value。</p>
+  </li>
+  <li>
+    <p><strong>row.names</strong>: 行名，默认为 NULL，可以设置为单个数字、字符串或字符串和数字的向量。</p>
+  </li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="err">…</span><span class="p">,</span><span class="w"> </span><span class="n">row.names</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>数据框常用操作：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="n">table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="w">
+    </span><span class="s1">'姓名'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"张三"</span><span class="p">,</span><span class="w"> </span><span class="s2">"李四"</span><span class="p">),</span><span class="w">
+    </span><span class="s1">'工号'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"001"</span><span class="p">,</span><span class="s2">"002"</span><span class="p">),</span><span class="w">
+    </span><span class="s1">'月薪'</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">2000</span><span class="p">)</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+
+  </span><span class="n">table</span><span class="w">
+
+  </span><span class="c1"># 获取数据结构</span><span class="w">
+  </span><span class="n">str</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 显示概要</span><span class="w">
+  </span><span class="n">summary</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 提取指定的列</span><span class="w">
+  </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="n">table</span><span class="o">$</span><span class="n">姓名</span><span class="p">,</span><span class="n">table</span><span class="o">$</span><span class="n">月薪</span><span class="p">)</span><span class="w">
+  </span><span class="n">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 提取前面两行</span><span class="w">
+  </span><span class="n">table</span><span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">2</span><span class="p">,]</span><span class="w">
+
+  </span><span class="c1"># 读取第 1 、2 行的第 1 、2 列数据：</span><span class="w">
+  </span><span class="n">table</span><span class="p">[</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">),</span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">)]</span><span class="w">
+
+  </span><span class="c1"># 添加部门列</span><span class="w">
+  </span><span class="n">table</span><span class="o">$</span><span class="s1">'部门'</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"运营"</span><span class="p">,</span><span class="s2">"技术"</span><span class="p">)</span><span class="w">
+
+  </span><span class="n">table</span><span class="w">
+
+
+
+  </span><span class="c1">###############</span><span class="w">
+  </span><span class="c1"># 数据框的级联 —— 行合并和列合并（与矩阵类似）</span><span class="w">
+  </span><span class="c1"># 创建另一个数据框：并进行cbind()</span><span class="w">
+  </span><span class="n">table2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="s2">"公司"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"Google"</span><span class="p">,</span><span class="s2">"Taobao"</span><span class="p">),</span><span class="w">
+                       </span><span class="s2">"性别"</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"男"</span><span class="p">,</span><span class="s2">"男"</span><span class="p">))</span><span class="w">
+
+  </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">cbind</span><span class="p">(</span><span class="n">table</span><span class="p">,</span><span class="n">table2</span><span class="p">)</span><span class="w">
+  </span><span class="n">result</span><span class="w">
+
+
+  </span><span class="c1"># 行拼接：</span><span class="w">
+  </span><span class="n">table</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="w">
+    </span><span class="n">姓名</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"张三"</span><span class="p">,</span><span class="w"> </span><span class="s2">"李四"</span><span class="p">,</span><span class="s2">"王五"</span><span class="p">),</span><span class="w">
+    </span><span class="n">工号</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"001"</span><span class="p">,</span><span class="s2">"002"</span><span class="p">,</span><span class="s2">"003"</span><span class="p">),</span><span class="w">
+    </span><span class="n">月薪</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1000</span><span class="p">,</span><span class="w"> </span><span class="m">2000</span><span class="p">,</span><span class="m">3000</span><span class="p">)</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+  </span><span class="n">newtable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">data.frame</span><span class="p">(</span><span class="w">
+    </span><span class="n">姓名</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"小明"</span><span class="p">,</span><span class="w"> </span><span class="s2">"小白"</span><span class="p">),</span><span class="w">
+    </span><span class="n">工号</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"101"</span><span class="p">,</span><span class="s2">"102"</span><span class="p">),</span><span class="w">
+    </span><span class="n">月薪</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">5000</span><span class="p">,</span><span class="w"> </span><span class="m">7000</span><span class="p">)</span><span class="w">
+  </span><span class="p">)</span><span class="w">
+  </span><span class="c1"># 合并两个数据框</span><span class="w">
+  </span><span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">rbind</span><span class="p">(</span><span class="n">table</span><span class="p">,</span><span class="n">newtable</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[数据框：]]></summary></entry><entry><title type="html">8&amp;amp;9. 矩阵基础及进阶</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-8&9-%E7%9F%A9%E9%98%B5%E5%9F%BA%E7%A1%80%E5%8F%8A%E8%BF%9B%E9%98%B6.html" rel="alternate" type="text/html" title="8&amp;amp;9. 矩阵基础及进阶" /><published>2022-09-20T21:16:25+08:00</published><updated>2022-09-20T21:16:25+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-8&amp;9%20%E7%9F%A9%E9%98%B5%E5%9F%BA%E7%A1%80%E5%8F%8A%E8%BF%9B%E9%98%B6</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-8&amp;9-%E7%9F%A9%E9%98%B5%E5%9F%BA%E7%A1%80%E5%8F%8A%E8%BF%9B%E9%98%B6.html"><![CDATA[<p><strong>矩阵：</strong></p>
+
+<p>矩阵是一个二维数组,只是每个元素都拥有相同的模式(数值型、字符型或逻辑型) 。可通过函数matrix创建矩阵。</p>
+
+<ul>
+  <li>创建矩阵：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w"> </span><span class="c1"># 基本语法：</span><span class="w">
+  </span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># data 向量，矩阵的数据；nrow 行数；ncol 列数；</span><span class="w">
+  </span><span class="c1"># byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；</span><span class="w">
+
+  </span><span class="c1"># 基本方法：</span><span class="w">
+  </span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="o">=</span><span class="m">4</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 指定行名和列名：</span><span class="w">
+  </span><span class="n">cells</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">26</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">68</span><span class="p">)</span><span class="w"> 
+  </span><span class="n">rnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"R1"</span><span class="p">,</span><span class="s2">"R2"</span><span class="p">)</span><span class="w"> 
+  </span><span class="n">cnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">,</span><span class="s2">"C2"</span><span class="p">)</span><span class="w"> 
+  </span><span class="n">mymatrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">rnames</span><span class="p">,</span><span class="w"> </span><span class="n">cnames</span><span class="p">))</span><span class="w">
+
+  </span><span class="c1"># byrow 为 TRUE 元素按行排列</span><span class="w">
+  </span><span class="n">M</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># Ebyrow 为 FALSE 元素按列排列</span><span class="w">
+  </span><span class="n">N</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+
+  </span><span class="c1"># 行名和列名也可在创建完矩阵之后再定义：</span><span class="w">
+  </span><span class="n">rownames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"row1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row4"</span><span class="p">)</span><span class="w">
+  </span><span class="n">colnames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"col1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col3"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>矩阵常用基本操作：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 获取矩阵的维度：</span><span class="w">
+  </span><span class="nf">dim</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 获取矩阵的行数和列数：</span><span class="w">
+  </span><span class="nf">dim</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="m">1</span><span class="p">]</span><span class="w">
+  </span><span class="nf">dim</span><span class="p">(</span><span class="n">x</span><span class="p">)[</span><span class="m">2</span><span class="p">]</span><span class="w">
+
+  </span><span class="n">nrow</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+  </span><span class="n">ncol</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w">
+
+
+  </span><span class="c1"># 转置矩阵</span><span class="w">
+  </span><span class="c1"># R 语言矩阵提供了 t() 函数，可以实现矩阵的行列互换。</span><span class="w">
+  </span><span class="c1"># 例如有个 m 行 n 列的矩阵，使用 t() 函数就能转换为 n 行 m 列的矩阵。</span><span class="w">
+
+  </span><span class="c1"># 创建一个 2 行 3 列的矩阵</span><span class="w">
+  </span><span class="n">M</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="p">,</span><span class="m">6</span><span class="p">,</span><span class="m">5</span><span class="p">,</span><span class="m">1</span><span class="p">,</span><span class="m">10</span><span class="p">,</span><span class="m">4</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 转换为 3 行 2 列的矩阵</span><span class="w">
+  </span><span class="n">t</span><span class="p">(</span><span class="n">M</span><span class="p">)</span><span class="w">
+
+
+  </span><span class="c1"># 矩阵加减：必须行数和列数都相等；</span><span class="w">
+  </span><span class="c1"># 创建 2 行 3 列的矩阵</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+  </span><span class="n">matrix2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 两个矩阵相加</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">matrix2</span><span class="w">
+
+  </span><span class="c1"># 两个矩阵相减</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">matrix2</span><span class="w">
+
+
+  </span><span class="c1"># 矩阵乘除：必须行数和列数都相等；</span><span class="w">
+  </span><span class="c1"># 两个矩阵对应元素相乘</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">matrix2</span><span class="w">
+
+  </span><span class="c1"># 两个矩阵相除</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="n">matrix2</span><span class="w">
+
+
+  </span><span class="c1">## 线性代数中的矩阵相乘：必须满足m1*n * n*m2；即第一个矩阵的列数要和第二个矩阵的行数相等；</span><span class="w">
+  </span><span class="c1"># 创建 2 行 3 列的矩阵</span><span class="w">
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">7</span><span class="p">,</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">-1</span><span class="p">,</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">)</span><span class="w">
+  </span><span class="n">matrix2</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">6</span><span class="p">,</span><span class="w"> </span><span class="m">1</span><span class="p">,</span><span class="w"> </span><span class="m">0</span><span class="p">,</span><span class="w"> </span><span class="m">9</span><span class="p">,</span><span class="w"> </span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">2</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">)</span><span class="w">
+
+  </span><span class="n">matrix1</span><span class="w"> </span><span class="o">%*%</span><span class="w"> </span><span class="n">matrix2</span><span class="w">
+</span></code></pre></div></div>
+
+<ul>
+  <li>矩阵进阶操作：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="c1"># 矩阵求行、列之和、平均数；</span><span class="w">
+  </span><span class="n">rowSums</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">#按行求和</span><span class="w">
+  </span><span class="n">colSums</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">#按列求和</span><span class="w">
+
+  </span><span class="n">mean</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">#均值</span><span class="w">
+  </span><span class="n">rowMeans</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">#行均值</span><span class="w">
+  </span><span class="n">colMeans</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1">#列均值</span><span class="w">
+
+  </span><span class="c1"># 矩阵行拼接和列拼接</span><span class="w">
+  </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">rnorm</span><span class="p">(</span><span class="m">15</span><span class="p">),</span><span class="m">5</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+  </span><span class="n">b</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">rnorm</span><span class="p">(</span><span class="m">15</span><span class="p">),</span><span class="m">3</span><span class="p">,</span><span class="m">5</span><span class="p">)</span><span class="w">
+  </span><span class="n">cbind</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="w">
+  </span><span class="n">bind</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 矩阵求逆：solve()函数：</span><span class="w">
+  </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">rnorm</span><span class="p">(</span><span class="m">16</span><span class="p">),</span><span class="m">4</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+  </span><span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 矩阵与其逆矩阵的乘积为对角矩阵</span><span class="w">
+  </span><span class="nf">round</span><span class="p">(</span><span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">%*%</span><span class="n">a</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 对于奇异阵，并不存在逆矩阵，但是可以计算其广义逆矩阵</span><span class="w">
+  </span><span class="n">a</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">16</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+  </span><span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w"> </span><span class="c1"># 报错；</span><span class="w">
+
+  </span><span class="n">library</span><span class="p">(</span><span class="n">MASS</span><span class="p">)</span><span class="w">
+  </span><span class="n">ginv</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 提取矩阵的主对角线元素</span><span class="w">
+  </span><span class="n">mat</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">16</span><span class="p">,</span><span class="m">4</span><span class="p">,</span><span class="m">4</span><span class="p">)</span><span class="w">
+  </span><span class="n">diag</span><span class="p">(</span><span class="n">mat</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 生成对角线为1的对角矩阵：</span><span class="w">
+  </span><span class="n">m</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">diag</span><span class="p">(</span><span class="m">4</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 求矩阵的特征值和特征向量：</span><span class="w">
+  </span><span class="n">d</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">17</span><span class="p">,</span><span class="m">22</span><span class="p">,</span><span class="m">27</span><span class="p">,</span><span class="m">22</span><span class="p">,</span><span class="m">29</span><span class="p">,</span><span class="m">36</span><span class="p">,</span><span class="m">27</span><span class="p">,</span><span class="m">36</span><span class="p">,</span><span class="m">45</span><span class="p">),</span><span class="m">3</span><span class="p">,</span><span class="m">3</span><span class="p">)</span><span class="w">
+  </span><span class="n">d.e</span><span class="o">=</span><span class="w"> </span><span class="n">eigen</span><span class="p">(</span><span class="n">d</span><span class="p">)</span><span class="w">
+
+  </span><span class="c1"># 矩阵的奇异值分解：</span><span class="w">
+  </span><span class="n">A</span><span class="o">=</span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">18</span><span class="p">,</span><span class="m">3</span><span class="p">,</span><span class="m">6</span><span class="p">)</span><span class="w">
+  </span><span class="n">A.s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">svd</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="w">
+  </span><span class="n">A.s</span><span class="o">$</span><span class="n">u</span><span class="o">%*%</span><span class="n">diag</span><span class="p">(</span><span class="n">A.s</span><span class="o">$</span><span class="n">d</span><span class="p">)</span><span class="o">%*%</span><span class="n">t</span><span class="p">(</span><span class="n">A.s</span><span class="o">$</span><span class="n">v</span><span class="p">)</span><span class="w"> </span><span class="c1"># a = udv’；u为左奇异向量；v为右奇异向量；</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[矩阵：]]></summary></entry><entry><title type="html">7. 初识矩阵</title><link href="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-7.-%E5%88%9D%E8%AF%86%E7%9F%A9%E9%98%B5.html" rel="alternate" type="text/html" title="7. 初识矩阵" /><published>2022-09-20T21:16:24+08:00</published><updated>2022-09-20T21:16:24+08:00</updated><id>http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-7.%20%E5%88%9D%E8%AF%86%E7%9F%A9%E9%98%B5</id><content type="html" xml:base="http://localhost:4000/r%E8%AF%AD%E8%A8%80/2022/09/20/%E7%94%9F%E4%BF%A1%E5%BF%85%E5%A4%87%E6%8A%80%E5%B7%A7%E4%B9%8BR%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B-7.-%E5%88%9D%E8%AF%86%E7%9F%A9%E9%98%B5.html"><![CDATA[<p><strong>矩阵：</strong></p>
+
+<p>矩阵是一个二维数组,只是每个元素都拥有相同的模式(数值型、字符型或逻辑型) 。可通过函数matrix创建矩阵。</p>
+
+<ul>
+  <li>创建矩阵：</li>
+</ul>
+
+<div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># 基本语法：</span><span class="w">
+</span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># data 向量，矩阵的数据；nrow 行数；ncol 列数；</span><span class="w">
+</span><span class="c1"># byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；</span><span class="w">
+
+</span><span class="c1"># 基本方法：</span><span class="w">
+</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="o">=</span><span class="m">4</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># 指定行名和列名：</span><span class="w">
+</span><span class="n">cells</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">26</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">68</span><span class="p">)</span><span class="w"> 
+</span><span class="n">rnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"R1"</span><span class="p">,</span><span class="s2">"R2"</span><span class="p">)</span><span class="w"> 
+</span><span class="n">cnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">,</span><span class="s2">"C2"</span><span class="p">)</span><span class="w"> 
+</span><span class="n">mymatrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">rnames</span><span class="p">,</span><span class="w"> </span><span class="n">cnames</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># byrow 为 TRUE 元素按行排列</span><span class="w">
+</span><span class="n">M</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Ebyrow 为 FALSE 元素按列排列</span><span class="w">
+</span><span class="n">N</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+
+</span><span class="c1"># 行名和列名也可在创建完矩阵之后再定义：</span><span class="w">
+</span><span class="n">rownames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"row1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row4"</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"col1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col3"</span><span class="p">)</span><span class="o">**</span><span class="n">矩阵</span><span class="err">：</span><span class="o">**</span><span class="w">
+
+</span><span class="n">矩阵是一个二维数组</span><span class="p">,</span><span class="n">只是每个元素都拥有相同的模式</span><span class="p">(</span><span class="n">数值型</span><span class="err">、</span><span class="n">字符型或逻辑型</span><span class="p">)</span><span class="w"> </span><span class="err">。</span><span class="n">可通过函数matrix创建矩阵</span><span class="err">。</span><span class="w">
+
+</span><span class="o">-</span><span class="w"> </span><span class="n">创建矩阵</span><span class="err">：</span><span class="w">
+
+</span><span class="err">```</span><span class="n">r</span><span class="w">
+</span><span class="c1"># 基本语法：</span><span class="w">
+</span><span class="n">matrix</span><span class="p">(</span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">NULL</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># data 向量，矩阵的数据；nrow 行数；ncol 列数；</span><span class="w">
+</span><span class="c1"># byrow 逻辑值，为 FALSE 按列排列，为 TRUE 按行排列；dimname 设置行和列的名称；</span><span class="w">
+
+</span><span class="c1"># 基本方法：</span><span class="w">
+</span><span class="n">y</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="w"> </span><span class="m">20</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="o">=</span><span class="m">5</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="o">=</span><span class="m">4</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># 指定行名和列名：</span><span class="w">
+</span><span class="n">cells</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="p">,</span><span class="m">26</span><span class="p">,</span><span class="m">24</span><span class="p">,</span><span class="m">68</span><span class="p">)</span><span class="w"> 
+</span><span class="n">rnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"R1"</span><span class="p">,</span><span class="s2">"R2"</span><span class="p">)</span><span class="w"> 
+</span><span class="n">cnames</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"C1"</span><span class="p">,</span><span class="s2">"C2"</span><span class="p">)</span><span class="w"> 
+</span><span class="n">mymatrix</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="n">cells</span><span class="p">,</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">ncol</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">,</span><span class="w"> </span><span class="n">dimnames</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">rnames</span><span class="p">,</span><span class="w"> </span><span class="n">cnames</span><span class="p">))</span><span class="w">
+
+</span><span class="c1"># byrow 为 TRUE 元素按行排列</span><span class="w">
+</span><span class="n">M</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">)</span><span class="w">
+
+</span><span class="c1"># Ebyrow 为 FALSE 元素按列排列</span><span class="w">
+</span><span class="n">N</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">matrix</span><span class="p">(</span><span class="nf">c</span><span class="p">(</span><span class="m">3</span><span class="o">:</span><span class="m">14</span><span class="p">),</span><span class="w"> </span><span class="n">nrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">4</span><span class="p">,</span><span class="w"> </span><span class="n">byrow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span><span class="p">)</span><span class="w">
+
+
+</span><span class="c1"># 行名和列名也可在创建完矩阵之后再定义：</span><span class="w">
+</span><span class="n">rownames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"row1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row3"</span><span class="p">,</span><span class="w"> </span><span class="s2">"row4"</span><span class="p">)</span><span class="w">
+</span><span class="n">colnames</span><span class="p">(</span><span class="n">N</span><span class="p">)</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s2">"col1"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col2"</span><span class="p">,</span><span class="w"> </span><span class="s2">"col3"</span><span class="p">)</span><span class="w">
+</span></code></pre></div></div>]]></content><author><name></name></author><category term="R语言" /><summary type="html"><![CDATA[矩阵：]]></summary></entry></feed>

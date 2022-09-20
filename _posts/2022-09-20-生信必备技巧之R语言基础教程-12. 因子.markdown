@@ -1,0 +1,88 @@
+---
+layout: post
+title:  "12. 因子"
+date:   2022-09-20 21:16:28 +0800
+categories: R语言
+---
+
+**因子**：
+
+- 变量可归结为**名义型、有序型或连续型变量**。**名义型变量**是没有顺序之分的类别变量。**有序型变量**表示一种顺序关系,而非数量关系。
+  
+  **类别(名义型)变量**和**有序类别(有序型)变量**在R中称为**因子(factor)**。
+
+```r
+factor(x = character(), levels, labels = levels, ordered = is.ordered(x))
+```
+
+- 参数说明：
+  
+  - **x**：向量
+  
+  - **levels**：指定各水平值, 不指定时由x的不同值来求得。
+  
+  - **labels**：水平的标签, 不指定时用各水平值的对应字符串。
+  
+  - **ordered**：逻辑值，用于指定水平是否有序。
+
+```r
+# 例子
+x <- c("M", "F", "F",  "M")
+sex <- factor(x)
+
+# levels参数
+x <- c("M", "F", "F",  "M")
+sex <- factor(x,levels = c("M","F"))
+```
+
+- 因子水平标签
+
+接下来我们使用 labels 参数为每个因子水平添加标签，labels 参数的字符顺序，要和 levels 参数的字符顺序保持一致，例如：
+
+```r
+# lables参数
+x <- c("M", "F", "F",  "M")
+sex <- factor(x,levels = c("M","F"),lables = c("女","男"))
+
+# as.factors()函数：
+```
+
+- 生成因子水平：我们可以使用 **gl()** 函数来生成因子水平，语法格式如下：
+
+```r
+gl(n, k, length = n*k, labels = seq_len(n), ordered = FALSE)
+```
+
+- 参数说明：
+  
+  - **n**: 设置 level 的个数
+  
+  - **k**: 设置每个 level 重复的次数
+  
+  - **length**: 设置长度
+  
+  - **labels**: 设置 level 的值
+  
+  - **ordered**: 设置是否 level 是排列好顺序的，布尔值。
+
+```r
+sex <- gl(2, 4, labels = c("M", "F"))
+```
+
+- 因子有啥用啊？
+  
+  - 讲解因子变量(factor)的特性很多情况下需要与字符型变量(character)相对比进行介绍,因为这两者实在是太像了,但实际上却有着诸多不同之处
+
+```r
+# 字符型排序的基本规则是先按照数字进行排序,继而根据英文字母顺序主义排序,因此上例中,第一个元素为4,第二个元素为5a,字符型变量的局限性在于其对元素的排序规则是内定的,无法改变的;
+sizes <- c("large", "very_large", "small", "medium")
+sort(sizes)
+
+sizes_fac <- factor(c("large", "very_large", "small", "medium"),
+                levels = c("small", "medium", "large", "very_large"))
+sort(sizes_fac)
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/

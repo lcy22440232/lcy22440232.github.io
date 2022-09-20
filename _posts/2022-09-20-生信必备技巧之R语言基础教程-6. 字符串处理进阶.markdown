@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "6. 字符串处理进阶"
+date:   2022-09-20 21:16:23 +0800
+categories: R语言
+---
+
+## 数据类型和数据结构
+
+**关于数据类型的补充内容**：
+
+- 字符串类型数据的常用进阶操作：
+
+```r
+# 大小写转换
+toupper("Runoob") # 大写
+tolower("Runoob") # 小写
+
+# 统计字符串长度
+nchar("中文", type="bytes") # 统计字节长度
+nchar("中文", type="char") # 总计字符数量
+
+# 截取字符串：substring()函数
+substring("123456789", 1, 5) # 截取字符串，从 1 到 5
+substring("1234567890", 5) # 截取字符串，从 5 到结束，默认从第一个开始；
+
+# 将字符串转换为数字
+as.numeric("12") 
+
+# 将数字转换为字符串
+as.character(12.34) 
+
+# 分隔符拆分字符串--非常重要；以后会经常用到；
+strsplit("2019;10;1", ";") 
+
+# 替换字符串
+gsub("/", "-", "2019/10/1")
+
+# R 支持 perl 语言格式的正则表达式：关于正则表达式，如果大家需要的话，我后面会单独出一期视频；
+gsub("[[:alpha:]]+", "$", "Two words")
+```
+
+[jekyll-docs]: https://jekyllrb.com/docs/home
+[jekyll-gh]:   https://github.com/jekyll/jekyll
+[jekyll-talk]: https://talk.jekyllrb.com/
